@@ -105,6 +105,17 @@ Brodmann的地图让“大脑不是均匀组织”这件事更加具体。但结
 本章的学习线索是“问题分解—多证据收敛—地图不等于机制”。复杂概念如语言、记忆、情绪不能直接作为单一机制处理，需要拆成可测量的组成过程。病灶、组织学、刺激和现代成像各有偏差；真正可靠的结论往往来自不同证据类型相互支持。定位回答where，但不能自动回答区域内部如何处理信息。
 
 
+
+
+## 本章插图
+
+
+![第7章科学史插图 015](assets/figures/figure-015.jpg){fig-align="center" width="90%"}
+
+
+![第7章科学史插图 016](assets/figures/figure-016.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [7.1] Broca P. Remarques sur le siège de la faculté du langage articulé, suivies d’une observation d’aphémie. Bulletin de la Société Anatomique de Paris. 1861.

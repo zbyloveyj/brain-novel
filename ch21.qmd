@@ -97,6 +97,23 @@
 奖项与图像。2003年劳特伯与曼斯菲尔德各获一半，奖项理由为MRI相关发现，并未将其等同于后来所有fMRI工作。四幅图含人工几何模型、概念时间曲线和因果结构，不是历史仪器照片、真实影像或患者结果。\[21.1–21.15\]
 
 
+
+
+## 本章插图
+
+
+![第21章科学史插图 067](assets/figures/figure-067.jpg){fig-align="center" width="90%"}
+
+
+![第21章科学史插图 068](assets/figures/figure-068.jpg){fig-align="center" width="90%"}
+
+
+![第21章科学史插图 069](assets/figures/figure-069.jpg){fig-align="center" width="90%"}
+
+
+![第21章科学史插图 070](assets/figures/figure-070.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [21.1] Bloch F, Hansen WW, Packard M. Nuclear induction. Physical Review. 1946;69:127. DOI: 10.1103/PhysRev.69.127

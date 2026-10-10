@@ -99,6 +99,23 @@
 插图说明。图12-1至12-4均为原创教学示意；图12-2没有复刻赫斯的原始记录，图12-3的曲线也不是发表数据。它们只帮助辨别证据与解释。1949年另一位获奖者莫尼斯在本章仅作历史伏笔，不构成对相关手术的推荐。
 
 
+
+
+## 本章插图
+
+
+![第12章科学史插图 031](assets/figures/figure-031.jpg){fig-align="center" width="90%"}
+
+
+![第12章科学史插图 032](assets/figures/figure-032.jpg){fig-align="center" width="90%"}
+
+
+![第12章科学史插图 033](assets/figures/figure-033.jpg){fig-align="center" width="90%"}
+
+
+![第12章科学史插图 034](assets/figures/figure-034.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [12.1] Hess WR. The Central Control of the Activity of Internal Organs. Nobel Lecture, 12 December 1949. Source

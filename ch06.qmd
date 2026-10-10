@@ -81,6 +81,17 @@ Sperry早在做这只青蛙之前，就已经对“神经连接是否可以随�
 学习线索：设计能让竞争理论产生不同预测的干预，并提前说明哪些结果会推翻各自解释。正常状态下的共同拟合，不足以区分机制。
 
 
+
+
+## 本章插图
+
+
+![第6章科学史插图 013](assets/figures/figure-013.jpg){fig-align="center" width="90%"}
+
+
+![第6章科学史插图 014](assets/figures/figure-014.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [6.1] Sperry RW. Effect of 180 degree rotation of the retinal field on visuomotor coordination. J Exp Zool. 1943;92(3):263–279. doi:10.1002/jez.1400920303.

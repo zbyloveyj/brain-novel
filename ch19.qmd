@@ -107,6 +107,23 @@
 文献与图像说明。参考文献\[19.7\]常以1950年引用，部分数据库或出版平台记为1951年；卷页与DOI指向同一篇文章。四幅图为概念重绘，未复用历史照片；蜂舞角度、地标位置与流程均为说明逻辑而设，不是真实追踪轨迹。\[19.7,19.12–19.15\]
 
 
+
+
+## 本章插图
+
+
+![第19章科学史插图 059](assets/figures/figure-059.jpg){fig-align="center" width="90%"}
+
+
+![第19章科学史插图 060](assets/figures/figure-060.jpg){fig-align="center" width="90%"}
+
+
+![第19章科学史插图 061](assets/figures/figure-061.jpg){fig-align="center" width="90%"}
+
+
+![第19章科学史插图 062](assets/figures/figure-062.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [19.1] von Frisch K. The Dance Language and Orientation of Bees. Cambridge, MA: Harvard University Press; 1967.

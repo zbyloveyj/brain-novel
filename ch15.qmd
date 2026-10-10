@@ -125,6 +125,23 @@
 配图与阅读。四幅图均为原创教学图，不是历史记录、真实动物数据或可直接实施的实验操作方案。图15-2的反应值和图15-3的概率为人为选择；不含效应量、样本量或统计显著性。建议先读\[15.2\]了解当时的提问，再对读\[15.5–15.8\]辨认后来改变的问题。
 
 
+
+
+## 本章插图
+
+
+![第15章科学史插图 043](assets/figures/figure-043.jpg){fig-align="center" width="90%"}
+
+
+![第15章科学史插图 044](assets/figures/figure-044.jpg){fig-align="center" width="90%"}
+
+
+![第15章科学史插图 045](assets/figures/figure-045.jpg){fig-align="center" width="90%"}
+
+
+![第15章科学史插图 046](assets/figures/figure-046.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [15.1] Pavlov IP. The Work of the Digestive Glands. Thompson WH, trans. London: Charles Griffin & Company; 1902. 1902年英文版扫描本

@@ -19,3 +19,5 @@ main{min-width:0}.overline{font:700 11px/1.6 var(--sans);letter-spacing:.18em;co
 .refs a{overflow-wrap:anywhere}
 @media(max-width:920px){.mobile-chapters{font:13px/1.8 var(--sans);display:flex;gap:8px;margin:20px 0 24px;flex-wrap:wrap}.mobile-chapters a{padding:8px 12px;border:1px solid var(--line);border-radius:5px;text-decoration:none}}
 @media(min-width:921px){.mobile-chapters{display:none}}
+/* Author-approved cover and chapter illustrations */
+.real-cover{display:block;max-width:230px;width:35%;height:auto;margin:0 auto 24px;box-shadow:0 6px 25px rgba(0,0,0,.12)}.chapter-images{padding:30px 0;margin-top:35px;border-top:1px solid #dce3d8}.chapter-images figure{margin:24px auto;max-width:740px;text-align:center}.chapter-images img{display:block;max-width:100%;height:auto;margin:0 auto}.chapter-images h2{font-size:23px}

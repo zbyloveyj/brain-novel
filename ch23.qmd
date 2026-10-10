@@ -99,6 +99,23 @@
 四幅图为人工电流轨迹与概念图，不含真实患者数据、意识阈值或已验证的诊断算法。问题仍有未解决部分；进一步测量、比较与可证伪的预测是正文保留的研究方向。
 
 
+
+
+## 本章插图
+
+
+![第23章科学史插图 075](assets/figures/figure-075.jpg){fig-align="center" width="90%"}
+
+
+![第23章科学史插图 076](assets/figures/figure-076.jpg){fig-align="center" width="90%"}
+
+
+![第23章科学史插图 077](assets/figures/figure-077.jpg){fig-align="center" width="90%"}
+
+
+![第23章科学史插图 078](assets/figures/figure-078.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [23.1] Neher E, Sakmann B. Single-channel currents recorded from membrane of denervated frog muscle fibres. Nature. 1976;260:799–802. DOI: 10.1038/260799a0

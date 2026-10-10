@@ -107,6 +107,23 @@
 奖项与图像。2014年奥基夫占奖金一半，迈布里特与爱德华·莫泽尔各占四分之一。四幅图为原创教学示意，其中活动值、网格点位和环境图均为人工构造；不是原论文数据、历史照片或完整定位回路。\[18.13\]
 
 
+
+
+## 本章插图
+
+
+![第18章科学史插图 055](assets/figures/figure-055.jpg){fig-align="center" width="90%"}
+
+
+![第18章科学史插图 056](assets/figures/figure-056.jpg){fig-align="center" width="90%"}
+
+
+![第18章科学史插图 057](assets/figures/figure-057.jpg){fig-align="center" width="90%"}
+
+
+![第18章科学史插图 058](assets/figures/figure-058.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [18.1] O’Keefe J, Dostrovsky J. The hippocampus as a spatial map. Preliminary evidence from unit activity in the freely-moving rat. Brain Research. 1971;34:171–175. DOI: 10.1016/0006-8993(71)90358-1

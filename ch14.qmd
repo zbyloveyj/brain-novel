@@ -107,6 +107,23 @@ PER的产生、积累、进入合适的细胞位置以及后来降解，使反�
 插图说明。图14-1的活动时段、图14-3的曲线均由程序生成，只表达概念，不代表原始动物数据或任何临床队列。图14-4是择要时间线，未试图覆盖整个时间生物学史。正文中的日常疲倦与作息讨论不构成睡眠障碍诊断或治疗建议。
 
 
+
+
+## 本章插图
+
+
+![第14章科学史插图 039](assets/figures/figure-039.jpg){fig-align="center" width="90%"}
+
+
+![第14章科学史插图 040](assets/figures/figure-040.jpg){fig-align="center" width="90%"}
+
+
+![第14章科学史插图 041](assets/figures/figure-041.jpg){fig-align="center" width="90%"}
+
+
+![第14章科学史插图 042](assets/figures/figure-042.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [14.1] Konopka RJ, Benzer S. Clock mutants of Drosophila melanogaster. Proceedings of the National Academy of Sciences USA. 1971;68:2112–2116. DOI: 10.1073/pnas.68.9.2112

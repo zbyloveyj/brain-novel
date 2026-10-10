@@ -133,6 +133,23 @@
 图示边界。四幅新增图均为原创教学示意，不是实验室原片，不含真实气味配方、受体测量值或嗅球解剖比例。图10-3与图10-4中的人为数值只服务于组合及浓度依赖的说明。
 
 
+
+
+## 本章插图
+
+
+![第10章科学史插图 023](assets/figures/figure-023.jpg){fig-align="center" width="90%"}
+
+
+![第10章科学史插图 024](assets/figures/figure-024.jpg){fig-align="center" width="90%"}
+
+
+![第10章科学史插图 025](assets/figures/figure-025.jpg){fig-align="center" width="90%"}
+
+
+![第10章科学史插图 026](assets/figures/figure-026.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [10.1] Buck L, Axel R. A novel multigene family may encode odorant receptors: a molecular basis for odor recognition. Cell. 1991;65:175–187. DOI: 10.1016/0092-8674(91)90418-X

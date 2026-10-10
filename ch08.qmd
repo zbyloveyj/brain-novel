@@ -87,6 +87,17 @@ Hubel的演讲则更像一次对二十多年实验思路的回看。他没有把
 本章的学习线索是“从无反应中重新定义变量”。数据不符合预期时，首先要排除技术错误；若技术可靠，则应考虑系统真正编码的变量可能不同于实验者最初设定的变量。科学发现不仅来自得到强信号，也来自理解为什么在你以为应该有信号的地方没有信号。
 
 
+
+
+## 本章插图
+
+
+![第8章科学史插图 017](assets/figures/figure-017.jpg){fig-align="center" width="90%"}
+
+
+![第8章科学史插图 018](assets/figures/figure-018.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [8.1] Hubel DH, Wiesel TN. Receptive fields of single neurones in the cat’s striate cortex. J Physiol. 1959;148(3):574–591. doi:10.1113/jphysiol.1959.sp006308.

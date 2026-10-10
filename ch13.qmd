@@ -107,6 +107,23 @@
 插图说明。图13-1是简化生化路径，不表示所有细胞都具备全部转化步骤。图13-2为文字性证据比较；图13-3为理想化的学习相关响应示意，不是论文中的单细胞记录，不说明每个多巴胺神经元都按此模式响应。图13-4用于提醒含量、释放、细胞反应与行为之间仍需独立证据。
 
 
+
+
+## 本章插图
+
+
+![第13章科学史插图 035](assets/figures/figure-035.jpg){fig-align="center" width="90%"}
+
+
+![第13章科学史插图 036](assets/figures/figure-036.jpg){fig-align="center" width="90%"}
+
+
+![第13章科学史插图 037](assets/figures/figure-037.jpg){fig-align="center" width="90%"}
+
+
+![第13章科学史插图 038](assets/figures/figure-038.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [13.1] Carlsson A, Lindqvist M, Magnusson T. 3,4-Dihydroxyphenylalanine and 5-hydroxytryptophan as reserpine antagonists. Nature. 1957;180:1200. DOI: 10.1038/1801200a0

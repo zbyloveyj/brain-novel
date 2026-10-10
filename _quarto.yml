@@ -8,7 +8,7 @@ site-url: https://zbyloveyj.github.io/brain-novel/
 book:
   title: "在我们理解大脑之前"
   subtitle: "一个博士生穿越百年神经科学"
-  description: "24章完整阅读版，科学史背景的原创长篇小说。历史插图暂不公开。"
+  description: "24章完整阅读版，科学史背景的原创长篇小说。正文及配图公开阅读。"
   chapters:
     - index.qmd
     - ch01.qmd

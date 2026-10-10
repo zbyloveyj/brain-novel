@@ -137,6 +137,23 @@
 文献说明。\[9.1\]保留原始德文报告书目，所附链接是可追溯该书目的传记档案入口；\[9.2\]链接为书目背景入口，不是全书下载。在线档案统一按2026年10月9日核对；未将无法取得的历史原件称作已逐页核读。
 
 
+
+
+## 本章插图
+
+
+![第9章科学史插图 019](assets/figures/figure-019.jpg){fig-align="center" width="90%"}
+
+
+![第9章科学史插图 020](assets/figures/figure-020.jpg){fig-align="center" width="90%"}
+
+
+![第9章科学史插图 021](assets/figures/figure-021.jpg){fig-align="center" width="90%"}
+
+
+![第9章科学史插图 022](assets/figures/figure-022.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [9.1] von Békésy G. Zur Theorie des Hörens; die Schwingungsform der Basilarmembran. Physikalische Zeitschrift. 1928;29:793–810.

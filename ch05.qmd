@@ -369,6 +369,17 @@ NGF如果只有Rita的形态观察，会长期停留在“一种未知活性”�
 本章的学习线索是“选择可操作模型—建立灵敏读出—尊重异常—跨学科补全证据链”。组学时代尤其容易先测很多东西再寻找故事，而NGF史提醒我们：在寻找未知因子时，一个高质量、可重复、具有功能意义的assay常常比更大的测量维度更重要。异常结果也不是天然的发现；正确流程是先系统排除错误，再决定它是否值得把研究方向拐过去。
 
 
+
+
+## 本章插图
+
+
+![第5章科学史插图 011](assets/figures/figure-011.jpg){fig-align="center" width="90%"}
+
+
+![第5章科学史插图 012](assets/figures/figure-012.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [5.1] Levi-Montalcini R, Hamburger V. Selective growth stimulating effects of mouse sarcoma on the sensory and sympathetic nervous system of the chick embryo. J Exp Zool. 1951;116(2):321–361. doi:10.1002/jez.1401160206.

@@ -275,6 +275,17 @@ Hodgkin仍然显得克制，像随时准备提醒别人“数据还没有完全�
 本章的学习线索是“测量—操纵—建模—证伪”：先把信号从细胞内测出来，再通过改变外液离子和固定膜电位拆分过程，随后用数学模型把多个过程重新合成，最后让模型产生可以被实验推翻的预测。对今天的计算生物学和AI研究同样重要：预测性能不等于机制解释，一个有科学价值的模型最好能够告诉你“改变哪个变量，会发生什么”。
 
 
+
+
+## 本章插图
+
+
+![第4章科学史插图 009](assets/figures/figure-009.jpg){fig-align="center" width="90%"}
+
+
+![第4章科学史插图 010](assets/figures/figure-010.jpg){fig-align="center" width="90%"}
+
+
 ## 本章参考文献
 
 - [4.1] Hodgkin AL, Huxley AF. Action potentials recorded from inside a nerve fibre. Nature. 1939;144:710–711. doi:10.1038/144710a0.
