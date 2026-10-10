@@ -1,32 +1,115 @@
+/* Brain Novel · private highlights and notes.
+   Compatible with prior brainNovelAnnotationsV1 records. */
 (()=>{'use strict';
-const match=location.pathname.match(/ch(\d{2})\.html$/), chapter=match?Number(match[1]):0;
-const KEY='brainNovelAnnotationsV1',article=document.querySelector('article.prose')||document.querySelector('.prose');
-if(!chapter||!article)return;
-let db={};try{db=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){alert('存储空间不足，请先导出笔记。')}};
-const notes=()=>db['ch'+chapter]||(db['ch'+chapter]=[]);
-const paras=[...article.querySelectorAll('p')];
-paras.forEach((p,i)=>p.dataset.paraIndex=String(i));
-function offsetIn(p,node,offset){const r=document.createRange();r.selectNodeContents(p);r.setEnd(node,offset);return r.toString().length;}
-function highlight(p,start,end,id){const w=document.createTreeWalker(p,NodeFilter.SHOW_TEXT);const nodes=[];let cursor=0,n;while((n=w.nextNode())){const from=cursor,to=cursor+n.length;cursor=to;if(to>start&&from<end&&n.parentElement?.closest('mark.reader-mark')===null)nodes.push({n,a:Math.max(0,start-from),b:Math.min(n.length,end-from)})}
-for(const {n,a,b} of nodes.reverse()){if(b<=a)continue;const tail=n.splitText(b),mid=n.splitText(a);const m=document.createElement('mark');m.className='reader-mark';m.dataset.noteId=id;mid.parentNode.replaceChild(m,mid);m.appendChild(mid);}}
-function rebuild(){article.querySelectorAll('mark.reader-mark').forEach(m=>m.replaceWith(...m.childNodes));article.normalize();for(const note of notes()){const p=paras[note.p];if(p&&note.start>=0&&note.end<=p.textContent.length&&note.start<note.end)highlight(p,note.start,note.end,note.id)}}
-let selectionInfo=null;
-const float=document.createElement('div');float.className='annotation-float';float.innerHTML='<button type="button" data-add="highlight">划线</button><button type="button" data-add="note">记笔记</button>';document.body.appendChild(float);
-const noteButton=document.createElement('button');noteButton.className='reader-notes-trigger';noteButton.type='button';noteButton.textContent='我的笔记';document.querySelector('.reader-toolbar')?.appendChild(noteButton);
-const panel=document.createElement('section');panel.className='reader-notes-panel';panel.hidden=true;panel.innerHTML='<div class="reader-notes-top"><strong>我的划线与笔记</strong><button type="button" data-close>关闭</button></div><p class="reader-notes-help">笔记仅保存在当前浏览器。清除浏览器数据后可能丢失，建议定期导出。</p><div class="reader-notes-items"></div><div class="reader-notes-actions"><button type="button" data-export>导出全部笔记</button><button type="button" data-import>导入笔记</button><input type="file" accept="application/json" hidden></div>';document.body.appendChild(panel);
-function render(){const box=panel.querySelector('.reader-notes-items');box.replaceChildren();for(const n of notes()){const el=document.createElement('div');el.className='reader-note-item';const q=document.createElement('blockquote');q.textContent=n.quote;el.append(q);if(n.body){const body=document.createElement('p');body.textContent=n.body;el.append(body)}const go=document.createElement('button');go.textContent='定位';go.onclick=()=>{panel.hidden=true;paras[n.p]?.scrollIntoView({behavior:'smooth',block:'center'})};const edit=document.createElement('button');edit.textContent='编辑';edit.onclick=()=>{const v=prompt('编辑笔记',n.body||'');if(v!==null){n.body=v;save();render()}};const del=document.createElement('button');del.textContent='删除';del.onclick=()=>{if(confirm('删除这条划线与笔记？')){db['ch'+chapter]=notes().filter(x=>x.id!==n.id);save();rebuild();render()}};el.append(go,edit,del);box.append(el)}if(!notes().length)box.textContent='本章还没有划线和笔记。'}
-const open=()=>{render();panel.hidden=false;float.style.display='none'};
-noteButton.onclick=open;panel.querySelector('[data-close]').onclick=()=>panel.hidden=true;
-function capture(){const s=getSelection();if(!s||s.isCollapsed||!s.rangeCount){float.style.display='none';return}const r=s.getRangeAt(0),a=r.startContainer.nodeType===1?r.startContainer:r.startContainer.parentElement,b=r.endContainer.nodeType===1?r.endContainer:r.endContainer.parentElement;const p=a.closest?.('p[data-para-index]');if(!p||p!==b.closest?.('p[data-para-index]')||!article.contains(p)){float.style.display='none';return}const start=offsetIn(p,r.startContainer,r.startOffset),end=offsetIn(p,r.endContainer,r.endOffset);if(end<=start||end-start>1000){float.style.display='none';return}selectionInfo={p:Number(p.dataset.paraIndex),start,end,quote:r.toString()};const rect=r.getBoundingClientRect();float.style.display='flex';float.style.left=Math.min(innerWidth-195,Math.max(10,rect.left))+'px';float.style.top=Math.max(12,rect.top-52)+'px';}
-document.addEventListener('mouseup',()=>setTimeout(capture,0));document.addEventListener('touchend',()=>setTimeout(capture,250));document.addEventListener('keyup',e=>{if(e.shiftKey||e.key==='ArrowLeft'||e.key==='ArrowRight')capture()});
-float.addEventListener('mousedown',e=>e.preventDefault());
-float.addEventListener('click',e=>{const mode=e.target.dataset.add;if(!mode||!selectionInfo)return;const s=selectionInfo;const overlap=notes().some(x=>x.p===s.p&&s.start<x.end&&s.end>x.start);if(overlap){alert('这段文字已被划线覆盖，请选择不重叠的文字。');return}const body=mode==='note'?prompt('为选中文字添加笔记（可以留空）',''):'';if(body===null)return;notes().push({...s,id:'n'+Date.now()+Math.random().toString(36).slice(2,7),body,created:new Date().toISOString()});save();getSelection()?.removeAllRanges();float.style.display='none';selectionInfo=null;rebuild()});
-article.addEventListener('click',e=>{const mark=e.target.closest('mark.reader-mark');if(!mark)return;open();const el=[...panel.querySelectorAll('.reader-note-item')][notes().findIndex(n=>n.id===mark.dataset.noteId)];el?.scrollIntoView({block:'center'})});
-panel.querySelector('[data-export]').onclick=()=>{const blob=new Blob([JSON.stringify({format:'brain-novel-notes-v1',notes:db},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='brain-novel-notes.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),500)};
-const file=panel.querySelector('input[type=file]');panel.querySelector('[data-import]').onclick=()=>file.click();file.onchange=async()=>{try{const j=JSON.parse(await file.files[0].text());if(j.format!=='brain-novel-notes-v1'||!j.notes||typeof j.notes!=='object')throw Error('格式不匹配');for(const [k,arr] of Object.entries(j.notes)){if(!/^ch\d{1,2}$/.test(k)||!Array.isArray(arr))continue;const valid=arr.filter(x=>Number.isInteger(x.p)&&Number.isInteger(x.start)&&Number.isInteger(x.end)&&typeof x.quote==='string'&&typeof x.id==='string').slice(0,2000);db[k]=[...(db[k]||[]),...valid.filter(x=>!(db[k]||[]).some(y=>y.id===x.id))]}save();rebuild();render();alert('笔记已导入')}catch(e){alert('无法导入：'+e.message)}file.value=''};
-rebuild();
-// 将原稿的图像在段落之间分散显示，不移动到句子内部。
-const gallery=document.querySelector('.chapter-images');
-if(gallery){const figures=[...gallery.querySelectorAll('figure')];if(figures.length&&paras.length){figures.forEach((fig,i)=>{fig.classList.add('inline-book-figure');const idx=Math.min(paras.length-1,Math.max(2,Math.round((i+1)/(figures.length+1)*paras.length)));paras[idx].insertAdjacentElement('afterend',fig)});gallery.remove()}}
+ const m=location.pathname.match(/ch(\d{2})\.html$/);if(!m)return;
+ const ch=Number(m[1]),article=document.querySelector('article.prose');if(!article)return;
+ const KEY='brainNovelAnnotationsV1';
+ let db={};try{db=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{db={}}
+ if(!db||typeof db!=='object'||Array.isArray(db))db={};
+ const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(db))}catch{alert('浏览器存储空间不足，请先导出笔记备份。')}};
+ const $=(selector,root=document)=>root.querySelector(selector);
+ const el=(t,cls,txt)=>{const n=document.createElement(t);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n};
+ const notes=(n=ch)=>{const k='ch'+n;return db[k]||(db[k]=[])};
+ const paras=Array.from(article.querySelectorAll(':scope > p[data-para-index]'));
+ function normalColor(c){return ['yellow','green','blue'].includes(c)?c:'yellow'}
+ function stripMarks(){article.querySelectorAll('mark.reader-mark').forEach(mark=>mark.replaceWith(...mark.childNodes));paras.forEach(p=>p.normalize())}
+ function anchor(note){const p=paras[note.p];if(!p)return null;
+  const content=p.textContent,quote=note.quote;
+  if(content.slice(note.start,note.end)===quote)return {p,start:note.start,end:note.end};
+  const near=content.indexOf(quote,Math.max(0,note.start-60));const start=near<0?content.indexOf(quote):near;
+  if(start<0)return null;return {p,start,end:start+quote.length};
+ }
+ function applyMark(note){const hit=anchor(note);if(!hit)return;
+  const {p,start,end}=hit;const w=document.createTreeWalker(p,NodeFilter.SHOW_TEXT);let node;let cursor=0;const parts=[];
+  while((node=w.nextNode())){const begin=cursor;cursor+=node.length;if(cursor<=start||begin>=end)continue;if(node.parentElement?.closest('mark.reader-mark'))continue;parts.push({node,a:Math.max(0,start-begin),b:Math.min(node.length,end-begin)})}
+  for(const {node,a,b} of parts.reverse()){
+   if(b<=a)continue;if(b<node.length)node.splitText(b);
+   const text=a>0?node.splitText(a):node;
+   const mark=el('mark','reader-mark');mark.dataset.noteId=note.id;mark.dataset.color=normalColor(note.color);
+   text.parentNode.replaceChild(mark,text);mark.append(text);
+  }
+ }
+ function rebuild(){stripMarks();for(const n of notes()){if(n&&Number.isInteger(n.p)&&typeof n.quote==='string'&&n.quote.length)applyMark(n)}}
+ const tools=el('div','annotation-float');tools.setAttribute('role','toolbar');tools.setAttribute('aria-label','选中文字后的操作');
+ for(const [mode,label] of [['yellow','黄线'],['green','绿线'],['blue','蓝线'],['note','记笔记']]){const b=el('button','',label);b.type='button';b.dataset.action=mode;tools.append(b)}
+ document.body.append(tools);
+ let selected=null;
+ function offsetIn(p,node,offset){const r=document.createRange();r.selectNodeContents(p);try{r.setEnd(node,offset)}catch{return 0}return r.toString().length}
+ function capture(){const sel=window.getSelection();if(!sel||sel.isCollapsed||!sel.rangeCount){tools.style.display='none';return}
+  const r=sel.getRangeAt(0),a=r.startContainer.nodeType===Node.ELEMENT_NODE?r.startContainer:r.startContainer.parentElement;
+  const b=r.endContainer.nodeType===Node.ELEMENT_NODE?r.endContainer:r.endContainer.parentElement;
+  const p=a?.closest?.('p[data-para-index]');if(!p||p!==b?.closest?.('p[data-para-index]')||!article.contains(p)){tools.style.display='none';return}
+  const start=offsetIn(p,r.startContainer,r.startOffset),end=offsetIn(p,r.endContainer,r.endOffset),quote=p.textContent.slice(start,end);
+  if(end<=start||quote.trim().length<2||quote.length>1000){tools.style.display='none';return}
+  selected={p:Number(p.dataset.paraIndex),start,end,quote};
+  const rect=r.getBoundingClientRect();tools.style.display='flex';tools.style.left=Math.max(10,Math.min(innerWidth-tools.offsetWidth-10,rect.left))+'px';
+  tools.style.top=Math.max(10,Math.min(innerHeight-55,rect.top-49))+'px';
+ }
+ document.addEventListener('mouseup',()=>setTimeout(capture,0));
+ document.addEventListener('touchend',()=>setTimeout(capture,220));
+ document.addEventListener('keyup',e=>{if(e.shiftKey||e.key==='ArrowRight'||e.key==='ArrowLeft')capture()});
+ document.addEventListener('pointerdown',e=>{if(!tools.contains(e.target))tools.style.display='none'});
+ tools.addEventListener('mousedown',e=>e.preventDefault());
+ tools.addEventListener('click',e=>{
+  const mode=e.target.dataset.action;if(!mode||!selected)return;
+  const value=selected,overlap=notes().some(x=>x.p===value.p&&x.start<value.end&&x.end>value.start);
+  if(overlap){alert('这段文字已有划线，请先在笔记面板中编辑或删除原来的划线。');return}
+  const note={...value,id:'note-'+Date.now()+'-'+Math.random().toString(36).slice(2,7),body:'',color:mode==='note'?'yellow':mode,created:new Date().toISOString()};
+  notes().push(note);save();window.getSelection()?.removeAllRanges();tools.style.display='none';selected=null;rebuild();
+  if(mode==='note'){openNotes();renderNotes();editNote(note)}
+ });
+ // Notes drawer and actions
+ const panel=el('aside','reader-notes-panel');panel.hidden=true;panel.setAttribute('aria-label','我的划线与笔记');
+ const header=el('div','reader-notes-top');header.append(el('strong','reader-notes-title','划线与笔记'));
+ const close=el('button','reader-drawer-close','关闭');close.type='button';close.onclick=()=>window.BrainNovelReader?.closeAll();header.append(close);panel.append(header);
+ const help=el('p','reader-notes-help','划线与笔记保存在此浏览器中。更换设备前请导出备份。');panel.append(help);
+ const scope=el('div','reader-notes-actions');
+ const now=el('button','','本章'),all=el('button','','全书');scope.append(now,all);panel.append(scope);
+ const listing=el('div','reader-notes-list');panel.append(listing);
+ const controls=el('div','reader-notes-actions');
+ const exportMd=el('button','','导出 Markdown');const exportJson=el('button','','备份 JSON');const importJson=el('button','','导入备份');
+ const file=el('input');file.type='file';file.accept='.json,application/json';file.hidden=true;
+ controls.append(exportMd,exportJson,importJson,file);panel.append(controls);
+ document.body.append(panel);
+ let scopeMode='current';
+ function openNotes(){tools.style.display='none';window.BrainNovelReader?.openDrawer(panel);renderNotes()}
+ document.addEventListener('brain-novel:notes',openNotes);
+ now.onclick=()=>{scopeMode='current';renderNotes()};all.onclick=()=>{scopeMode='all';renderNotes()};
+ function sortedNotes(){const list=scopeMode==='current'?notes().map(n=>({ch,n})):Object.keys(db).filter(k=>/^ch(?:[1-9]|1\d|2[0-4])$/.test(k)).flatMap(k=>(db[k]||[]).map(n=>({ch:Number(k.slice(2)),n})));return list.sort((a,b)=>a.ch-b.ch||a.n.p-b.n.p||a.n.start-b.n.start)}
+ function editNote(n){renderNotes();const item=listing.querySelector(`[data-note-id="${CSS.escape(n.id)}"]`);if(!item)return;
+  const controls=item.querySelector('.reader-notes-actions');const input=el('textarea');input.rows=4;input.placeholder='写下此刻的思考……';input.style.cssText='width:100%;resize:vertical;border:1px solid var(--line);border-radius:6px;padding:10px;background:var(--surface);color:var(--ink);font:13px/1.7 var(--sans);margin-top:10px';input.value=n.body||'';
+  const saveButton=el('button','','保存笔记');saveButton.onclick=()=>{n.body=input.value.trim();save();renderNotes()};
+  const cancel=el('button','','取消');cancel.onclick=renderNotes;
+  controls.before(input);controls.replaceChildren(saveButton,cancel);input.focus();item.scrollIntoView({block:'nearest'});
+ }
+ function renderNotes(){listing.replaceChildren();const records=sortedNotes();now.setAttribute('aria-pressed',String(scopeMode==='current'));all.setAttribute('aria-pressed',String(scopeMode==='all'));
+  if(!records.length){listing.append(el('p','reader-note-empty','还没有笔记。选中正文中的文字，就可以划线或写下感想。'));return}
+  for(const {ch:which,n} of records){if(typeof n?.id!=='string'||typeof n.quote!=='string')continue;
+   const item=el('div','reader-notes-item');item.dataset.noteId=n.id;
+   item.append(el('div','reader-notes-meta',`第${which}章 · ${new Date(n.created||Date.now()).toLocaleDateString('zh-CN')}`));
+   const quote=el('blockquote','',n.quote);quote.dataset.color=normalColor(n.color);item.append(quote);
+   if(n.body)item.append(el('p','',n.body));
+   const buttons=el('div','reader-notes-actions');
+   const locate=el('button','','回到原文');locate.onclick=()=>{
+    if(which!==ch){location.href=`ch${String(which).padStart(2,'0')}.html#${encodeURIComponent(n.id)}`;return}
+    window.BrainNovelReader?.closeAll();const mark=article.querySelector(`mark[data-note-id="${CSS.escape(n.id)}"]`);(mark||paras[n.p])?.scrollIntoView({behavior:'smooth',block:'center'});
+   };
+   const edit=el('button','','编辑');edit.onclick=()=>editNote(n);
+   const del=el('button','','删除');del.onclick=()=>{if(!confirm('确认删除这条划线和笔记？'))return;db['ch'+which]=(db['ch'+which]||[]).filter(x=>x.id!==n.id);save();rebuild();renderNotes()};
+   buttons.append(locate,edit,del);item.append(buttons);listing.append(item)
+  }
+ }
+ article.addEventListener('click',e=>{const mark=e.target.closest('mark.reader-mark');if(!mark)return;openNotes();const item=listing.querySelector(`[data-note-id="${CSS.escape(mark.dataset.noteId)}"]`);item?.scrollIntoView({block:'center'})});
+ function download(text,name,mime){const blob=new Blob([text],{type:mime}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+ exportJson.onclick=()=>download(JSON.stringify({format:'brain-novel-notes-v1',notes:db},null,2),'一心问道_阅读笔记备份.json','application/json');
+ exportMd.onclick=()=>{const out=['# 《在我们理解大脑之前》阅读笔记',''];for(const {ch:n,n:x} of sortedNotes()){out.push(`## 第${n}章`,'',`> ${x.quote.replaceAll('\n','\n> ')}`,'',x.body||'（仅划线）','')}download(out.join('\n'),'一心问道_阅读笔记.md','text/markdown')};
+ importJson.onclick=()=>file.click();
+ file.onchange=async()=>{try{const raw=await file.files[0].text();if(raw.length>5_000_000)throw new Error('文件过大');const v=JSON.parse(raw);if(v.format!=='brain-novel-notes-v1'||!v.notes||typeof v.notes!=='object')throw new Error('笔记备份格式不匹配');
+  for(const [k,arr] of Object.entries(v.notes)){if(!/^ch(?:[1-9]|1\d|2[0-4])$/.test(k)||!Array.isArray(arr))continue;
+   const good=arr.filter(x=>x&&typeof x.id==='string'&&x.id.length<=140&&typeof x.quote==='string'&&x.quote.length<2000&&Number.isInteger(x.p)&&Number.isInteger(x.start)&&Number.isInteger(x.end)&&x.start>=0&&x.end>x.start).slice(0,2000);
+   db[k]=[...(db[k]||[]),...good.filter(x=>!(db[k]||[]).some(y=>y.id===x.id))]
+  }save();rebuild();renderNotes();alert('笔记备份导入成功')
+ }catch(e){alert('导入失败：'+e.message)}file.value=''};
+ rebuild();
+ if(location.hash.startsWith('#note-')){setTimeout(()=>article.querySelector(`mark[data-note-id="${CSS.escape(decodeURIComponent(location.hash.slice(1)))}"]`)?.scrollIntoView({block:'center'}),200)}
 })();
