@@ -13,3 +13,9 @@ main{min-width:0}.overline{font:700 11px/1.6 var(--sans);letter-spacing:.18em;co
 @media(max-width:560px){.topbar{height:58px}.toplinks{gap:12px;font-size:12px}.toplinks a:not(.keep){display:none}.layout{padding:28px 18px 60px}.chapter-name{font-size:30px}.cover{min-height:390px;padding:38px 28px}.cover-title{font-size:37px;margin-top:34px}.cover-bottom{left:28px;bottom:36px}.prose{font-size:16px;line-height:2.02;letter-spacing:0}.chapter-teaser{align-items:center}.subtitle{font-size:13px}}
 /* Quarto-generated book styling applied after GitHub Actions rebuild */
 #quarto-content p{font-family:var(--serif);line-height:2.04;font-size:1.05rem}#quarto-content h1,#quarto-content h2{font-family:var(--serif)}#quarto-content .page-columns{max-width:1250px}.sidebar{font-family:var(--sans)}.quarto-title-block .title{letter-spacing:.08em}
+
+.chapter-group{margin:22px 0 10px;font:700 12px/1.6 var(--sans);letter-spacing:.09em;color:var(--muted)}
+.reading-note{color:#748371;font:12px/1.85 var(--sans);margin:24px 0 10px}
+.refs a{overflow-wrap:anywhere}
+@media(max-width:920px){.mobile-chapters{font:13px/1.8 var(--sans);display:flex;gap:8px;margin:20px 0 24px;flex-wrap:wrap}.mobile-chapters a{padding:8px 12px;border:1px solid var(--line);border-radius:5px;text-decoration:none}}
+@media(min-width:921px){.mobile-chapters{display:none}}

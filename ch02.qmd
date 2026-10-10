@@ -2,7 +2,6 @@
 
 *Sherrington × Adrian：一个刺激怎样变成神经信号？*
 
-
 那条腿忽然一缩，实验台跟着响了一声。我下意识后退，后腰撞到木柜，柜上的玻璃瓶轻轻打了个颤。穿白围裙的人没有看我，都盯着正在转动的记录鼓。空气里有消毒剂的气味，也有动物身上潮湿的热气。我还没有看清自己到了哪里，就先知道了一件事：在这间屋子里，连惊讶都最好轻一点。
 
 “别碰那根线。”有人说。 说话的人个子不算高，胡子修得整齐，眼神温和得不像刚刚制止了一个差点毁掉实验的人。我认出他比认出Cajal慢了一点。Charles Scott Sherrington。我看了一眼桌上的书稿。封面还不是正式印刷品，里面密密麻麻写着修改。日期接近二十世纪初。
@@ -41,7 +40,7 @@ Sherrington研究的正是这扇门。有一天上午，他让我记录一次屈
 
 我当时笑了。后来越想越觉得这句话残酷。现代研究很容易从最高层的问题出发：抑郁是什么，意识是什么，自我是怎样形成的，复杂认知如何涌现。问题都足够宏大，图也足够漂亮。但如果你连最基础的因果链条都没有抓住，宏大有时只是把不知道放大了。Sherrington并没有让我放弃宏大问题。他只是在教我从哪里进入它。
 
-几天后，我在他桌上看到一摞写满修改的手稿。那本书将在1906年出版。巧得几乎像某种故意安排：同一年，Golgi和Cajal因为神经系统结构获得诺贝尔奖，而Sherrington正在把“离散神经元”变成一个真正会工作的系统。Cajal画出了细胞之间没有融合的边界。Sherrington开始告诉人们，那道边界不是缺口，而可能是神经系统最重要的调节位置之一。我本以为第二章的答案已经出现了。可某个下午，Sherrington突然问我：“你一直说信号。你觉得一个神经冲动究竟是什么样？”我张了张嘴。动作电位。钠离子内流，钾离子外流，膜电位快速翻转。[2.1]
+几天后，我在他桌上看到一摞写满修改的手稿。那本书将在1906年出版。巧得几乎像某种故意安排：同一年，Golgi和Cajal因为神经系统结构获得诺贝尔奖，而Sherrington正在把“离散神经元”变成一个真正会工作的系统。Cajal画出了细胞之间没有融合的边界。Sherrington开始告诉人们，那道边界不是缺口，而可能是神经系统最重要的调节位置之一。我本以为第二章的答案已经出现了。可某个下午，Sherrington突然问我：“你一直说信号。你觉得一个神经冲动究竟是什么样？”我张了张嘴。动作电位。钠离子内流，钾离子外流，膜电位快速翻转。\[2.1\]
 
 这些答案在我脑中整整齐齐。但我不能直接把1950年代的答案拿给一个二十世纪初的生理学家。于是我换了一个说法。
 
@@ -49,8 +48,7 @@ Sherrington研究的正是这扇门。有一天上午，他让我记录一次屈
 
 “记录一整条神经的变化不难。”他说，“难的是知道一个单独的纤维在说什么。”
 
-
-*　　＊　＊　＊*
+***
 
 他说完这句话以后，时间没有立刻改变。它像故意让我先记住一样，安静了几秒。然后实验室里所有声音突然被一种持续的电噪声盖住。我再次睁眼时，已经站在另一间实验室。设备明显新了许多。桌上有放大器、导线和精细得令人头皮发紧的解剖工具。墙边的装置像一组拼凑起来的电子仪器，没有任何我熟悉的数字界面，所有东西都靠旋钮、玻璃管和线路工作。窗外是Cambridge。桌旁的男人比Sherrington年轻很多。Edgar Adrian。时间是1926年前后。如果说Sherrington擅长从整个反射系统中推断神经元之间发生了什么，那么Adrian正在做一件方向相反的事：把系统拆到几乎不能再拆。
 
@@ -70,8 +68,7 @@ Adrian给我的第一印象不是“天才”，而是省字。他说话短，�
 
 “奇怪吗？”Adrian问。 “如果不知道答案，会很奇怪。” “那你已经知道答案了？” 我一时语塞。他笑了笑，没有追问。我突然意识到穿越给我的最大优势并没有想象中那么大。知道“答案”并不等于知道答案怎样被证明。你可以背出神经冲动的规律，却未必能设计出一个实验把单根纤维从成百上千根纤维中分离出来；你可以知道强刺激会提高放电频率，却未必知道怎样排除是仪器幅度饱和、组织损伤或者多纤维混入导致的假象。知道未来，只能让我在结果出来后认出它。并不能让我自动拥有发现它的能力。
 
-
-*　　＊　＊　＊*
+***
 
 1928年前后，我又一次出现在Adrian的实验室。设备旁多了一个扬声器。放大后的神经活动不仅可以被记录，还能转换成声音。只有少数纤维活动时，扬声器里会传出一个个短促的点击声。啪。啪、啪。刺激增强。啪、啪、啪、啪、啪。实验室里所有人都安静下来。那不是音乐。可我很久没有听过比它更像音乐的东西。一根神经纤维正在“说话”。它的词汇贫乏得惊人。每一次脉冲几乎都是相似的事件。强烈的世界并不会让一个脉冲变成更大的脉冲；它更多地让脉冲来得更频繁，让更多纤维加入。
 
@@ -81,7 +78,7 @@ Adrian给我的第一印象不是“天才”，而是省字。他说话短，�
 
 红色、疼痛、触摸、饥饿、恐惧、一个人的脸、一段旋律，最终都要被神经系统转换成某种有限的电活动模式。复杂性并不一定藏在每一个信号内部，而可能来自哪些细胞在什么时候放电、它们连接到哪里、又如何与其他细胞共同活动。这让我想起Sherrington的话：重要的不是“有连接”，而是连接之后发生什么。Cajal先把连续的森林拆成一个个细胞。Sherrington把这些细胞重新组织成会整合的系统。Adrian则第一次让我们听见系统中最小的电语言之一。三个人的工作像在完成同一件事，只是尺度不同。
 
-时间再次向前跳时，实验室里的啪嗒声换成了管弦乐的回响。1932年12月10日，我站在斯德哥尔摩音乐厅里，突然意识到自己已经见过一次这种仪式。二十六年前，Golgi和Cajal因为神经系统的结构共同领奖；这一次，七十五岁的Sherrington和四十三岁的Adrian因为“关于神经元功能的发现”各得一半。结构之后是功能——诺贝尔奖的两次共同授奖，像无意间替神经科学画出了前后相接的两页。[2.5]
+时间再次向前跳时，实验室里的啪嗒声换成了管弦乐的回响。1932年12月10日，我站在斯德哥尔摩音乐厅里，突然意识到自己已经见过一次这种仪式。二十六年前，Golgi和Cajal因为神经系统的结构共同领奖；这一次，七十五岁的Sherrington和四十三岁的Adrian因为“关于神经元功能的发现”各得一半。结构之后是功能——诺贝尔奖的两次共同授奖，像无意间替神经科学画出了前后相接的两页。\[2.5\]
 
 Sherrington穿着礼服，看起来比实验室里更瘦，也更老，但神情仍然从容。Adrian年轻得多，站在他旁边时甚至让人产生一种“老师与下一代”的视觉错觉。国王递过证书和奖章时，我想起两个人不同的工作台：一个用反射和抑制拆解神经系统如何协调，一个用放大器和单纤维记录把神经冲动从噪声里剥出来。他们并不是在同一个实验里得到同一个答案，却在同一个问题上从两端合拢——神经元不只是形态单位，它还是会被激活、会被抑制、会发送脉冲、会参与整合的功能单位。
 
@@ -99,6 +96,7 @@ Sherrington穿着礼服，看起来比实验室里更瘦，也更老，但神情
 
 从斯德哥尔摩回到实验室仿佛只用了一个眨眼。我把手放在扬声器旁，听着短促的点击声，忽然觉得诺贝尔奖其实离实验室很远。奖章属于1932年，改变知识的时刻却散落在此前漫长的年月里：糟糕的记录被丢掉，某根纤维终于被分离出来，某个脉冲第一次稳定出现，某个人因此多问了一句“为什么”。历史喜欢用年份把一切压成节点，实验却从来不是按年份发生的。
 
+---
 
 ## 史实与创作说明
 
@@ -109,15 +107,11 @@ Sherrington在1906年的《The Integrative Action of the Nervous System》中系
 
 ## 本章参考文献
 
-[2.1] Sherrington CS. The Integrative Action of the Nervous System. New York: Charles Scribner’s Sons; 1906.
+- [2.1] Sherrington CS. The Integrative Action of the Nervous System. New York: Charles Scribner’s Sons; 1906.
+- [2.2] Adrian ED. The impulses produced by sensory nerve endings. Part I. J Physiol. 1926;61(1):49–72. doi:10.1113/jphysiol.1926.sp002273.
+- [2.3] Adrian ED, Zotterman Y. The impulses produced by sensory nerve-endings. Part II: The response of a single end-organ. J Physiol. 1926;61(2):151–171. doi:10.1113/jphysiol.1926.sp002281.
+- [2.4] Adrian ED, Zotterman Y. The impulses produced by sensory nerve endings. Part III: Impulses set up by touch and pressure. J Physiol. 1926;61(4):465–483. doi:10.1113/jphysiol.1926.sp002308.
+- [2.5] Nobel Prize. The Nobel Prize in Physiology or Medicine 1932: Charles Scott Sherrington and Edgar Douglas Adrian.
+- [2.6] Adrian ED. Nobel Lecture, 12 December 1932; Sherrington CS. Nobel Lecture, 12 December 1932.
 
-[2.2] Adrian ED. The impulses produced by sensory nerve endings. Part I. J Physiol. 1926;61(1):49–72. doi:10.1113/jphysiol.1926.sp002273.
-
-[2.3] Adrian ED, Zotterman Y. The impulses produced by sensory nerve-endings. Part II: The response of a single end-organ. J Physiol. 1926;61(2):151–171. doi:10.1113/jphysiol.1926.sp002281.
-
-[2.4] Adrian ED, Zotterman Y. The impulses produced by sensory nerve endings. Part III: Impulses set up by touch and pressure. J Physiol. 1926;61(4):465–483. doi:10.1113/jphysiol.1926.sp002308.
-
-[2.5] Nobel Prize. The Nobel Prize in Physiology or Medicine 1932: Charles Scott Sherrington and Edgar Douglas Adrian.
-
-[2.6] Adrian ED. Nobel Lecture, 12 December 1932; Sherrington CS. Nobel Lecture, 12 December 1932.
-
+> **插图说明：** 原稿的实验示意图正在进行公开传播权利核验，当前网页仅发布正文与参考文献。

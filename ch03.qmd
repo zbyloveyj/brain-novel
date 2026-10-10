@@ -2,7 +2,6 @@
 
 *Loewi × Dale：神经信号如何跨过细胞之间的缝？*
 
-
 扬声器里的“啪”声像一颗小石子，落进我耳朵里还没沉下去，脚下的木板已经换成了另一间屋子的地面。这一次声音更慢，咚，咚，咚，隔一会儿又响。它不像神经脉冲，倒像有人在隔壁房间数着心跳。我循声走过去，看见桌上一只盛着液体的玻璃容器，旁边有人把袖子卷到了肘部。
 
 扬声器里Adrian那一声短促的神经脉冲还在我耳边，下一秒，它忽然变成了另一种更低、更沉的节律。
@@ -79,8 +78,7 @@ Loewi没有立刻把那种物质叫作乙酰胆碱。他叫它Vagusstoff——�
 
 不是所有克制都来自保守。有些克制是为了给下一次实验留位置。
 
-
-*　　＊　＊　＊*
+***
 
 几周之后，我开始发现这项实验真正改变的并不只是“神经—心脏”关系。
 
@@ -146,8 +144,7 @@ Dale早在1914年前后就系统研究过乙酰胆碱的药理作用。他发现
 
 这大概就是Dale式的浪漫。
 
-
-*　　＊　＊　＊*
+***
 
 1936年12月，我第三次站在斯德哥尔摩。
 
@@ -179,6 +176,7 @@ Loewi在宴会上说，科学家本来已经拥有一件很奢侈的事——可
 
 我低头看笔记，纸上的“chemical transmission”几个字开始被水一样的阴影覆盖。先出现的是海腥味。然后是风。最后，我听见有人在不远处抱怨：“水银还是不肯往下掉。”
 
+---
 
 ## 史实与创作说明
 
@@ -189,15 +187,11 @@ Loewi在1921年发表经典蛙心实验：刺激第一颗蛙心的迷走神经�
 
 ## 本章参考文献
 
-[3.1] Loewi O. Über humorale Übertragbarkeit der Herznervenwirkung. Pflügers Archiv für die gesamte Physiologie. 1921;189:239–242.
+- [3.1] Loewi O. Über humorale Übertragbarkeit der Herznervenwirkung. Pflügers Archiv für die gesamte Physiologie. 1921;189:239–242.
+- [3.2] Dale HH. The action of certain esters and ethers of choline, and their relation to muscarine. J Pharmacol Exp Ther. 1914;6:147–190.
+- [3.3] Nobel Prize. The Nobel Prize in Physiology or Medicine 1936: Sir Henry Dale and Otto Loewi.
+- [3.4] Loewi O. The Chemical Transmission of Nerve Action. Nobel Lecture, 12 December 1936.
+- [3.5] Dale HH. Some Recent Extensions of the Chemical Transmission of the Effects of Nerve Impulses. Nobel Lecture, 12 December 1936.
+- [3.6] Zimmer HG. Otto Loewi and the chemical transmission of vagus stimulation in the heart. Clin Cardiol. 2006;29:135–136.
 
-[3.2] Dale HH. The action of certain esters and ethers of choline, and their relation to muscarine. J Pharmacol Exp Ther. 1914;6:147–190.
-
-[3.3] Nobel Prize. The Nobel Prize in Physiology or Medicine 1936: Sir Henry Dale and Otto Loewi.
-
-[3.4] Loewi O. The Chemical Transmission of Nerve Action. Nobel Lecture, 12 December 1936.
-
-[3.5] Dale HH. Some Recent Extensions of the Chemical Transmission of the Effects of Nerve Impulses. Nobel Lecture, 12 December 1936.
-
-[3.6] Zimmer HG. Otto Loewi and the chemical transmission of vagus stimulation in the heart. Clin Cardiol. 2006;29:135–136.
-
+> **插图说明：** 原稿的实验示意图正在进行公开传播权利核验，当前网页仅发布正文与参考文献。
