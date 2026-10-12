@@ -12,6 +12,12 @@ https://zbyloveyj.github.io/brain-novel/
 - 阅读功能：`docs/reader.js` 和 `docs/annotations.js`
 - 书籍版式：`docs/book.css`
 
+## 完整 PDF 电子书
+
+[直接下载完整图文 PDF](https://raw.githubusercontent.com/zbyloveyj/brain-novel/main/docs/downloads/brain-novel-complete.pdf) · [在线阅读网站下载](https://zbyloveyj.github.io/brain-novel/downloads/brain-novel-complete.pdf)
+
+2026年10月12日版：六部24章、81幅正文插图、288条章节参考文献，保留作者一心问道署名。包含封面、扉页、版权页、可点击目录、章节书签和页码，中文字体嵌入 PDF。页数及质量检查见 `ebook/QUALITY.md`。复现方法见 `ebook/README.md`。
+
 ## 发布方式
 
 当前 `docs/` 是经过完整排版、测试和配置的**静态网站发布目录**。请在 `Settings → Pages → Build and deployment` 选择 `Deploy from a branch`，分支 `main`，目录 `/docs`，不要切换到其他产物以免丢失网页交互功能。根目录中的 `.qmd` 是便于编辑的 Quarto 书稿源文件，暂不包含静态阅读器的全部交互。
