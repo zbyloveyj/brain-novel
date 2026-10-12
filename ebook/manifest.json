@@ -5,7 +5,7 @@
     "paragraphs": 54,
     "images": 3,
     "references": 6,
-    "qmd_sha256": "9fc9c5112e967d73ba083aef0600182afc11d35742b4297fd828bc0c4d16bf30"
+    "qmd_sha256": "360145f102aa1ad2281470cabe3d74bc563c0a4f6053346e7a33c3db9307aea4"
   },
   {
     "chapter": 2,
@@ -13,7 +13,7 @@
     "paragraphs": 45,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "c13f2440bb62282378efe1cb543f8cad13c429d0046a79e62a43ef38cd158dc4"
+    "qmd_sha256": "bbf5e6761eb04664bf85e4978f4da59222f6bddcd41feb7e4b4323b7b3242d7f"
   },
   {
     "chapter": 3,
@@ -21,7 +21,7 @@
     "paragraphs": 85,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "b457adb21738c86b7650114f90fb7c12f4841008406051631f6f3783d31c6ef7"
+    "qmd_sha256": "c05dd93e85c45129ecd54059b3d60353b3f47fcd036d9fd8250b43ac46421996"
   },
   {
     "chapter": 4,
@@ -29,7 +29,7 @@
     "paragraphs": 129,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "95c714c23f00f8e618e08cea1283516f39fab40b9c4e9da0a12e92633b531f9f"
+    "qmd_sha256": "99e2bcf85365a732ced3ce758604ecd6b58c20f19280ff95c53b31fa74526a4f"
   },
   {
     "chapter": 5,
@@ -37,7 +37,7 @@
     "paragraphs": 175,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "c397c8986a452130d3116dc770daea26916416ced950b3f50677afaa5c707253"
+    "qmd_sha256": "989f78f30eceb1d42cba9decf5736a1adf2e89467e4390f530aa5e554f52d891"
   },
   {
     "chapter": 6,
@@ -45,7 +45,7 @@
     "paragraphs": 34,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "5599ce9fa512ffcfcf551c0fa3409d63b56fd2d8cb02af7a5e2d208fe73ef637"
+    "qmd_sha256": "00084481597e8342177987aaa05d180a71e726d5244aab4f669e9889bb658061"
   },
   {
     "chapter": 7,
@@ -53,7 +53,7 @@
     "paragraphs": 43,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "77512db1d200c591f8564ef77f0f29aa72d2b884490a2accc86826a2ee9204d6"
+    "qmd_sha256": "27a5765cb738ef8bdd677d709083218b6dba160a830c73400158e522156aa11e"
   },
   {
     "chapter": 8,
@@ -61,7 +61,7 @@
     "paragraphs": 36,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "3b9fdb5261d3dfe5547fb10006461db0b6ed1a0b6468fe2168b4cb0174bd4a7a"
+    "qmd_sha256": "5214f3688089c5ca7d27def6fa88baab66b61c8cc3b3ee4b246314d035ef0aee"
   },
   {
     "chapter": 9,
@@ -69,7 +69,7 @@
     "paragraphs": 55,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "b24bbab3db0837e30a9963b003c4d791329731cc22367a1daa7f5d51d7fc5d5d"
+    "qmd_sha256": "d73d9bc331cec69f203d198fbf04e224dfc5ac4683c4d16686cab7ef68e2d355"
   },
   {
     "chapter": 10,
@@ -77,7 +77,7 @@
     "paragraphs": 53,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "88a8e214f00c1bdd2bc1e071ecffde6b91486adb119628dd7d6a9952e5caeea1"
+    "qmd_sha256": "7681d86f8984009fcae28a3312fa36c69417f623040984541fc96d84846412af"
   },
   {
     "chapter": 11,
@@ -85,7 +85,7 @@
     "paragraphs": 59,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "8bdce4bb9b5b1c0772537145c9acbd117c097c7594e7b36f0ad4cc8fb9e7f313"
+    "qmd_sha256": "5a1ae68c7fdb8eb3fc88902ce2c2cdd0039174719c68b19564f4683386bd6c57"
   },
   {
     "chapter": 12,
@@ -93,7 +93,7 @@
     "paragraphs": 38,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "2213b6eacc09a395bdf1269f633e6bf3d8e5a242e4531854d908ae9a5c89c0d2"
+    "qmd_sha256": "88aa0f4834aa99fe7d0014834bb86dbe0c3c82cfaef6e9327cbd2ac7b7b9ce30"
   },
   {
     "chapter": 13,
@@ -101,7 +101,7 @@
     "paragraphs": 42,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "71148e65c7ec53c1eee669ee97340ac636d229a3d51eb250881a45b8ead723f1"
+    "qmd_sha256": "401b6221bfbd5f00bf7217fa767e13540cf23f6c2a537ad48e48d59e9ea8b182"
   },
   {
     "chapter": 14,
@@ -109,7 +109,7 @@
     "paragraphs": 42,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "45fbb4f2b3d8944baf7ec1477ce99e59cea12b927cbb89ac38f0b642606302c6"
+    "qmd_sha256": "b9f6bc30c279b7c8d8b41196739337317989e7dbf5075b52eacf35d54d6ec511"
   },
   {
     "chapter": 15,
@@ -117,7 +117,7 @@
     "paragraphs": 49,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "48efd0faaf76fc217078ed32d1765167a6a4ee7325bd81ae71fbefd1cba78d6a"
+    "qmd_sha256": "5b767cf498ca2180c842c7f28c46bfa26fddf2c722f3d77469b213b350c121c8"
   },
   {
     "chapter": 16,
@@ -125,7 +125,7 @@
     "paragraphs": 51,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "acc52ef22e9882c5258dc284113ff39aca5d0d68ef47d2c8a8fadc612319e787"
+    "qmd_sha256": "6c813d98d83baaf15429971b36d12d1e8fa5655dc94ad78bf6c339c89a99996a"
   },
   {
     "chapter": 17,
@@ -133,7 +133,7 @@
     "paragraphs": 60,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "4c509c8c739696e77ccb4cae6ed9746a4210fc644b07454e5ff4f9955bdf410e"
+    "qmd_sha256": "1820ef61baab83926c1d5ab57b6b743cd71a62b69c142693cb1d4716c8f28a8d"
   },
   {
     "chapter": 18,
@@ -141,7 +141,7 @@
     "paragraphs": 42,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "1f37e1ed10b373a642be184aca8d96e95fd00a4571ad211407c143228594a362"
+    "qmd_sha256": "a432eef3a1447f4e8d388340189bde538ea17b2e559062ba52571e08c2315146"
   },
   {
     "chapter": 19,
@@ -149,7 +149,7 @@
     "paragraphs": 42,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "3242fcf7fa95829a329f0572ea1e469d082ad8c783107581e0cb2945497e0cad"
+    "qmd_sha256": "5941a3a2dfc1539f2abbd5079692df853f9240633cc6700c4cf2ea39fd706903"
   },
   {
     "chapter": 20,
@@ -157,7 +157,7 @@
     "paragraphs": 38,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "14bf4d55855022032f856de2792f88e695b68828342016216ab67997297b1ed1"
+    "qmd_sha256": "296d37a80ad2b08b09dcb30b4890e75661f8a1a3e60d9e993209d9754d94057e"
   },
   {
     "chapter": 21,
@@ -165,7 +165,7 @@
     "paragraphs": 38,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "85607df5463d91c081b07c83721cce618fb49385e43e1d3431879e9f3626c48e"
+    "qmd_sha256": "705b1bf6e80f75679529677ca82541ee8778e0884d31a445aa6cdebfa71d693a"
   },
   {
     "chapter": 22,
@@ -173,7 +173,7 @@
     "paragraphs": 35,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "3505c52664b3a578ccaa81986ba4c06d9837f9204ff20374b221d609ff3c7eeb"
+    "qmd_sha256": "3e6b0e98923ad087729a117cfdedccb3464284b755e7a7e1b0cf72d5502b4a34"
   },
   {
     "chapter": 23,
@@ -181,7 +181,7 @@
     "paragraphs": 39,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "0a7c63987fd630773c53b6cd9dd76c8c5c72297fd9245fa9eb6eb7d9f245020e"
+    "qmd_sha256": "1b1a7a3b1c5efd0af7f677dea6c894dad8264a02bdb67281061b24faa24bdf6d"
   },
   {
     "chapter": 24,
@@ -189,6 +189,6 @@
     "paragraphs": 47,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "ad198b1ef531619116f5a28e8bb7dc567b21818e59d5032882433348bf336471"
+    "qmd_sha256": "c97c62d5ec2706c77d1ec2cee9daf970c251cc679a28b4d863713e4222f0cc93"
   }
 ]

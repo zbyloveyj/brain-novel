@@ -53,7 +53,7 @@ for i in range(1,25):
  manifest.append(dict(chapter=i,title=title,paragraphs=len(article.select('p')),images=len(article.select('img')),references=len(refs),qmd_sha256=hashlib.sha256(qmd.read_bytes()).hexdigest()))
 css='''
 @font-face {font-family:BookSerif;src:url("FONT");}
-@page {size:160mm 240mm;margin:19mm 17mm 19mm; @top-center {content:"在我们理解大脑之前";font:8pt BookSerif;color:#777;} @bottom-center {content:counter(page);font:9pt BookSerif;color:#555;}}
+@page {size:160mm 240mm;margin:19mm 17mm 19mm; @top-center {content:"在我们理解大脑之前";font:8pt BookSerif;color:#666;} @bottom-center {content:counter(page);font:9pt BookSerif;color:#555;}}
 @page cover {margin:0;@top-center{content:none;}@bottom-center{content:none;}}
 @page front {@top-center{content:none;}}
 *{box-sizing:border-box}body{font-family:BookSerif,serif;font-size:10.8pt;line-height:1.85;color:#222;margin:0}
@@ -72,7 +72,7 @@ hr{border:none;border-top:0.5pt solid #ccc;margin:6mm 35mm;break-after:avoid}.ci
 cover=(ROOT/'docs/assets/cover.webp').as_uri()
 front=f'''<section class="cover"><img src="{cover}" alt="本书封面"></section>
 <section class="front title-page"><h1>在我们理解大脑之前</h1><p>一个博士生穿越百年神经科学</p><p class="author">一心问道　著</p><p>六部 · 二十四章 · 完整图文电子书</p><p>2026年10月</p></section>
-<section class="front copyright"><h1>版权与阅读说明</h1><p>© 2026 一心问道。作品著作权归相应权利人所有。保留所有权利。</p><p>本版为作者授权公开下载的完整图文电子书，供个人阅读。公开下载不代表开放第三方转载、改编、再发行或商业使用授权。本书尚无正式出版 ISBN。</p><p>本书以真实神经科学史为背景。部分人物对话、相遇与生活情节属于文学创作，并非历史记录。各章保留史实与创作说明及参考文献。</p><p>封面及正文插图沿用作者确认公开展示的版本。部分为科学史资料重绘或示意图，不应视为原始历史照片。</p><p>电子书依据仓库2026年10月12日主分支的二十四章定稿制作；正文与 Quarto 源文件核对，插图沿用公开阅读页面的原始段落位置。本版仅整理排版，未对小说正文作文学改写。</p><p>作者：一心问道<br>版本：完整图文电子书 · 2026-10-12<br>在线阅读：<a href="https://zbyloveyj.github.io/brain-novel/">zbyloveyj.github.io/brain-novel/</a></p></section>
+<section class="front copyright"><h1>版权与阅读说明</h1><p>© 2026 一心问道。作品著作权归相应权利人所有。保留所有权利。</p><p>本版为作者授权公开下载的完整图文电子书，供个人阅读。公开下载不代表开放第三方转载、改编、再发行或商业使用授权。本书尚无正式出版 ISBN。</p><p>本书以真实神经科学史为背景。部分人物对话、相遇与生活情节属于文学创作，并非历史记录。各章保留史实与创作说明及参考文献。</p><p>封面及正文插图沿用作者确认公开展示的版本。部分为科学史资料重绘或示意图，不应视为原始历史照片。</p><p>电子书依据仓库2026年10月12日主分支的二十四章定稿制作；正文与 Quarto 源文件核对，插图沿用公开阅读页面的原始段落位置。本版校正明确的叙事矛盾、重复与用语问题，精简少量议论，保留情节、章节与参考文献。</p><p>作者：一心问道<br>版本：编辑修订图文版 · 2026-10-12<br>在线阅读：<a href="https://zbyloveyj.github.io/brain-novel/">zbyloveyj.github.io/brain-novel/</a></p></section>
 <section class="front toc"><h1>目录</h1><ul>{''.join(toc)}</ul></section>'''
 doc='<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>在我们理解大脑之前</title><meta name="author" content="一心问道"><style>'+css+'</style></head><body>'+front+''.join(chapters)+'</body></html>'
 (ROOT/'ebook/book.html').write_text(doc)

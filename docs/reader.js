@@ -31,6 +31,8 @@
  if(ch<1||ch>24)return;
  document.body.classList.add('chapter-page');
  const article=$('article.prose');if(!article)return;
+ const resumeRequested=new URLSearchParams(location.search).has('resume');
+ const savedResume=Math.max(0,Math.min(1,Number(state.history[ch]??state.bookmarks[ch]?.position??0)||0));
  const overlay=el('div','reader-overlay');overlay.hidden=true;document.body.appendChild(overlay);
  let activePanel=null;
  const closeAll=()=>{
@@ -84,10 +86,10 @@
  let scheduled=false;
  function update(){scheduled=false;const p=currentPct();progress.style.width=(p*100).toFixed(1)+'%';status.textContent=`第${ch}章 · 已读 ${Math.round(p*100)}%`;state.lastChapter=ch;state.progress=p;state.history[ch]=p;persist()}
  addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(update)}},{passive:true});
- addEventListener('pagehide',update);update();
- if(new URLSearchParams(location.search).has('resume')){
-  const p=state.history[ch]??state.bookmarks[ch]?.position??0;
-  if(p>0.03)requestAnimationFrame(()=>{setTimeout(()=>window.scrollTo({top:(document.documentElement.scrollHeight-innerHeight)*p,behavior:'auto'}),180)})
- }
+ addEventListener('pagehide',update);
+ if(resumeRequested&&savedResume>0.03){
+  const restore=()=>requestAnimationFrame(()=>{window.scrollTo({top:Math.max(0,document.documentElement.scrollHeight-innerHeight)*savedResume,behavior:'auto'});update()});
+  if(document.fonts?.ready)document.fonts.ready.then(restore);else restore();
+ }else update();
  addEventListener('keydown',e=>{if(!e.altKey||e.ctrlKey||e.metaKey)return;if(e.key==='ArrowRight'&&ch<24)location.href='ch'+String(ch+1).padStart(2,'0')+'.html';if(e.key==='ArrowLeft'&&ch>1)location.href='ch'+String(ch-1).padStart(2,'0')+'.html'});
 })();

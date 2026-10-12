@@ -70,7 +70,7 @@
 
 鲍尔与同事2012年的研究明确显示，头动能够在功能连接结果中引入系统性影响。这并不是说所有连接都是头动，也不是只要在模型里放进一个运动参数就保证问题消失。它说明一些看似有空间结构的差异，可能部分来自参与者怎样移动以及数据怎样被处理。\[21.15\]
 
-我忽然看见序章里自己的那张图。那时候我检查头动，是为了确定结果还能显著；现在我更想知道，结果在什么合理的处理下保持什么部分，在哪些条件下变得不稳。一个不方便的敏感性结果，不该被当成妨碍故事的纸张。它可能在告诉我，故事究竟站在哪里。
+我又想起离开实验室前的那张脑图。那时候我检查头动，是为了确定结果还能显著；现在我更想知道，结果在什么合理的处理下保持什么部分，在哪些条件下变得不稳。一个不方便的敏感性结果，不该被当成妨碍故事的纸张。它可能在告诉我，故事究竟站在哪里。
 
 我没有因此讨厌脑图。恰恰相反，知道它经过多少层测量以后，我更珍惜它能够提供的东西。非侵入地观察活人的脑结构与活动相关变化，使许多此前难以安排的问题能够被研究。限制不是使一种技术失去价值，而是使研究者知道怎样把价值用在能够支持的地方。
 
@@ -131,5 +131,3 @@
 - [21.13] Logothetis NK, Pauls J, Augath M, Trinath T, Oeltermann A. Neurophysiological investigation of the basis of the fMRI signal. Nature. 2001;412:150–157. DOI: 10.1038/35084005
 - [21.14] Biswal B, Yetkin FZ, Haughton VM, Hyde JS. Functional connectivity in the motor cortex of resting human brain using echo-planar MRI. Magnetic Resonance in Medicine. 1995;34:537–541. DOI: 10.1002/mrm.1910340409
 - [21.15] Power JD, Barnes KA, Snyder AZ, Schlaggar BL, Petersen SE. Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion. NeuroImage. 2012;59:2142–2154. DOI: 10.1016/j.neuroimage.2011.10.018
-
-> **插图说明：** 原稿的实验示意图正在进行公开传播权利核验，当前网页仅发布正文与参考文献。

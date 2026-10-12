@@ -1,12 +1,5 @@
 name: Deploy Quarto book to GitHub Pages
 on:
-  push:
-    branches: [main]
-    paths:
-      - "_quarto.yml"
-      - "*.qmd"
-      - "book.css"
-      - ".github/workflows/quarto-pages.yml"
   workflow_dispatch:
 permissions:
   contents: read
@@ -26,6 +19,8 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
       - name: Render Quarto Book
         run: quarto render --to html
+      - name: Preserve complete literary reader and PDF download
+        run: cp -a docs/. _book/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

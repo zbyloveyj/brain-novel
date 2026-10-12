@@ -54,7 +54,7 @@ Brodmann并不是拿着功能实验给每块皮层命名。他主要依据cytoar
 
 “那是以后的证据。”他说。
 
-我很喜欢这句回答。分类系统最危险的时刻，往往不是它被发明时，而是使用者忘记了分类依据。一个脑区模板可以基于细胞结构、沟回解剖、功能连接、任务激活或数据驱动聚类。不同分区并不是“谁更正确”的简单竞争，而是在回答不同层次的问题。今天我们把某个统计结果映射到一个模板时，实际上已经偷偷接受了那个模板对大脑边界的假设。
+我把分区图翻到背面，在边角写下“细胞结构”。回到自己的时代，我会在电脑里见到按沟回、连接或任务划出的另一些边界。那些图都能用来研究大脑，却未必在划同一种东西。用哪一张，至少应该记得它最初是怎么画出来的。
 
 Brodmann的地图让“大脑不是均匀组织”这件事更加具体。但结构地图仍然不等于功能地图。真正让“活着的人类皮层”开始回答问题的，是几十年后的手术室。
 
@@ -124,5 +124,3 @@ Brodmann的地图让“大脑不是均匀组织”这件事更加具体。但结
 - [7.4] Penfield W, Boldrey E. Somatic motor and sensory representation in the cerebral cortex of man as studied by electrical stimulation. Brain. 1937;60(4):389–443. doi:10.1093/brain/60.4.389.
 - [7.5] Penfield W, Rasmussen T. The Cerebral Cortex of Man: A Clinical Study of Localization of Function. New York: Macmillan; 1950.
 - [7.6] Dronkers NF, Plaisant O, Iba-Zizen MT, Cabanis EA. Paul Broca’s historic cases: high resolution MR imaging of the brains of Leborgne and Lelong. Brain. 2007;130:1432–1441.
-
-> **插图说明：** 原稿的实验示意图正在进行公开传播权利核验，当前网页仅发布正文与参考文献。

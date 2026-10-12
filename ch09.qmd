@@ -171,5 +171,3 @@
 - [9.13] Palmer AR, Russell IJ. Phase-locking in the cochlear nerve of the guinea-pig and its relation to the receptor potential of inner hair-cells. Hearing Research. 1986;24:1–15. DOI: 10.1016/0378-5955(86)90002-X
 - [9.14] Cherry EC. Some experiments on the recognition of speech, with one and with two ears. Journal of the Acoustical Society of America. 1953;25:975–979. DOI: 10.1121/1.1907229
 - [9.15] von Békésy G. Some biophysical experiments from fifty years ago. Annual Review of Physiology. 1974;36:1–18. DOI: 10.1146/annurev.ph.36.030174.000245
-
-> **插图说明：** 原稿的实验示意图正在进行公开传播权利核验，当前网页仅发布正文与参考文献。

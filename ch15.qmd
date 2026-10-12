@@ -159,5 +159,3 @@
 - [15.13] McCormick DA, Thompson RF. Cerebellum: Essential involvement in the classically conditioned eyelid response. Science. 1984;223(4633):296–299. DOI: 10.1126/science.6701513
 - [15.14] Schultz W, Dayan P, Montague PR. A neural substrate of prediction and reward. Science. 1997;275(5306):1593–1599. DOI: 10.1126/science.275.5306.1593
 - [15.15] Rescorla RA. Pavlovian conditioning: It's not what you think it is. American Psychologist. 1988;43(3):151–160. DOI: 10.1037/0003-066X.43.3.151
-
-> **插图说明：** 原稿的实验示意图正在进行公开传播权利核验，当前网页仅发布正文与参考文献。

@@ -82,7 +82,7 @@
 
 ## 史实与创作说明
 
-史实与虚构。早期前额叶白质切除术、1949年获奖、后续伦理文本与现代神经调控研究依据列出的原著、官方记录和临床论文。玛丽亚及其姐姐是明确的虚构合成人物，日常动作与担忧不是某个真实患者档案。没有将其结局写成可验证的史实。 医院长椅上的玛丽亚与其家属为合成虚构人物，不对应任何可辨识历史患者。
+史实与虚构。早期前额叶白质切除术、1949年获奖、后续伦理文本与现代神经调控研究依据列出的原著、官方记录和临床论文。玛丽亚及其姐姐是明确的虚构合成人物，日常动作与担忧不是某个真实患者档案。其结局不作为可核验的史实。
 
 患者与疗效。症状减少、安静、照护负担降低、认知与自主生活能力不是可互换的终点。历史观察性报告不能据此获得现代对照试验的证据地位；失访或无法表达也不能归入痊愈。1949年的授奖记录是历史事实，不构成今天的疗效背书。\[22.1–22.6\]
 
@@ -125,5 +125,3 @@
 - [22.13] Kennedy SH, et al. Deep brain stimulation for treatment-resistant depression: follow-up after 3 to 6 years. American Journal of Psychiatry. 2011;168:502–510. DOI: 10.1176/appi.ajp.2010.10081187
 - [22.14] Schuurman PR, et al. A comparison of continuous thalamic stimulation and thalamotomy for suppression of severe tremor. New England Journal of Medicine. 2000;342:461–468. DOI: 10.1056/NEJM200002173420703
 - [22.15] Hess WR. The Central Control of the Activity of Internal Organs. Nobel Lecture, 12 December 1949. 在线档案
-
-> **插图说明：** 原稿的实验示意图正在进行公开传播权利核验，当前网页仅发布正文与参考文献。
