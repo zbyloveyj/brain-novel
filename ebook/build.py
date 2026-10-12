@@ -9,7 +9,7 @@ OUT=ROOT/'docs'/'downloads'; OUT.mkdir(exist_ok=True)
 font=ROOT/'ebook/fonts/NotoSerifCJKsc-Regular.otf'
 if not font.exists(): raise SystemExit('Install NotoSerifCJKsc-Regular.otf in ebook/fonts first; see ebook/README.md')
 parts=[(1,'第一部','大脑是什么'),(6,'第二部','大脑开始组织世界'),(9,'第三部','世界怎样抵达我'),(12,'第四部','身体开始行动'),(15,'第五部','过去如何留在身体里'),(19,'第六部','我们怎样成为自己')]
-norm=lambda t:re.sub(r'[^\w\u4e00-\u9fff]','',t)
+norm=lambda t:re.sub(r'[^\w\u4e00-\u9fff]','',t).casefold()
 chapters=[]; toc=[]; manifest=[]
 for i in range(1,25):
  qmd=ROOT/f'ch{i:02}.qmd'; page=ROOT/f'docs/ch{i:02}.html'
