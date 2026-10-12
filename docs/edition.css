@@ -63,3 +63,5 @@ main,.home-page main{max-width:none;min-width:0}.chapter-page main{max-width:850
 .home-page .hero-art-caption{display:block;text-align:center;margin-top:29px}
 /* Use the bundled Chinese face when a device has no system CJK sans font. */
 :root{--sans:"PingFang SC","Noto Sans CJK SC","Microsoft YaHei","Novel Song",system-ui,sans-serif}
+@media(max-width:959px){.home-page .sidenav,.sidenav{height:calc(100dvh - 74px)}}
+@media(max-width:620px){.home-page .sidenav,.sidenav{height:calc(100dvh - 62px)}}
