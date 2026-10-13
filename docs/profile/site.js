@@ -1,0 +1,12 @@
+(()=>{'use strict';
+const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#site-nav');
+const closeMenu=()=>{if(!toggle||!nav)return;nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.querySelector('span').textContent='＋'};
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);toggle.querySelector('span').textContent=open?'−':'＋'});nav.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&toggle.getAttribute('aria-expanded')==='true'){closeMenu();toggle.focus()}});document.addEventListener('click',e=>{if(!e.target.closest('.site-header'))closeMenu()});matchMedia('(min-width:651px)').addEventListener('change',e=>{if(e.matches)closeMenu()})}
+const tabs=[...document.querySelectorAll('[data-lens]')];
+function activate(tab){tabs.forEach(t=>{const selected=t===tab;t.setAttribute('aria-selected',String(selected));t.tabIndex=selected?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!selected})}
+tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>activate(tab));tab.addEventListener('keydown',e=>{let next=null;if(e.key==='ArrowRight')next=(i+1)%tabs.length;if(e.key==='ArrowLeft')next=(i+tabs.length-1)%tabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;if(next!==null){e.preventDefault();activate(tabs[next]);tabs[next].focus()}})});
+const toast=document.querySelector('.toast');let timer;
+function say(message){if(!toast)return;toast.textContent=message;toast.hidden=false;clearTimeout(timer);timer=setTimeout(()=>{toast.hidden=true},3000)}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const text=button.dataset.copy;try{await navigator.clipboard.writeText(text);say('已复制：'+text)}catch{say('请长按或选中文字复制：'+text)}}));
+if('IntersectionObserver' in window){const sections=[...document.querySelectorAll('main section[id]')];const links=[...document.querySelectorAll('#site-nav a[href^="#"]')];const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)links.forEach(a=>{if(a.getAttribute('href')==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})})},{rootMargin:'-20% 0px -55% 0px',threshold:0});sections.forEach(s=>observer.observe(s))}
+})();
