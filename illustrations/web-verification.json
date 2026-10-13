@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-13T03:05:36.830987+00:00",
+  "source_commit": "17c799e80d81a919d5afccf712646c4f81300a2e",
+  "matched_online_files": 190,
+  "chapters": 24,
+  "illustrations": 81,
+  "svg_files": 81,
+  "pdf_pages": 317,
+  "pdf_sha256": "0132d69383e6a43de9fb9f70ceff7c6232ac9758af18a3311ffd8d602298ab1d",
+  "verification": "HTTP 200 and SHA256 equality for all checked online files; homepage illustration anchors checked against chapter DOM.",
+  "browser_qa": "Not repeated; prior desktop/mobile static rendering only."
+}
