@@ -10,7 +10,7 @@ https://zbyloveyj.github.io/brain-novel/
 
 - 全部24章：`docs/ch01.html` 至 `docs/ch24.html`
 - 81幅插图：根据书稿内的**原始段落位置**嵌入正文，完整图注可展开
-- 封面：`docs/assets/cover.webp`，由作者提供与确认
+- 封面：`docs/assets/cover.webp`，2026年10月13日按作者要求重新设计，网页与 PDF 同步更新
 - 阅读功能：`docs/reader.js` 和 `docs/annotations.js`
 - 书籍版式：`docs/book.css`
 
