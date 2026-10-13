@@ -10,13 +10,13 @@ https://zbyloveyj.github.io/brain-novel/
 
 - 全部24章：`docs/ch01.html` 至 `docs/ch24.html`
 - 81幅插图：根据书稿内的**原始段落位置**嵌入正文，完整图注可展开
-- 封面：`docs/assets/cover.webp`，2026年10月13日按作者要求更新为暖白、浅蓝与柔金色的明亮封面，网页、个人主页与 PDF 同步更新
+- 封面：`docs/assets/cover.webp`，2026年10月13日按作者要求更新为暖白纸面、墨蓝钢笔线描与少量赭红文字的文学书封，网页、个人主页与 PDF 同步更新
 - 阅读功能：`docs/reader.js` 和 `docs/annotations.js`
 - 书籍版式：`docs/book.css`
 
 ## 完整 PDF 电子书
 
-[直接下载完整图文 PDF](https://raw.githubusercontent.com/zbyloveyj/brain-novel/main/docs/downloads/brain-novel-complete.pdf?v=20261013bright) · [在线阅读网站下载](https://zbyloveyj.github.io/brain-novel/downloads/brain-novel-complete.pdf?v=20261013bright)
+[直接下载完整图文 PDF](https://raw.githubusercontent.com/zbyloveyj/brain-novel/main/docs/downloads/brain-novel-complete.pdf?v=20261013paper) · [在线阅读网站下载](https://zbyloveyj.github.io/brain-novel/downloads/brain-novel-complete.pdf?v=20261013paper)
 
 2026年10月12日编辑修订版：六部24章、81幅正文插图、288条章节参考文献，保留作者一心问道署名。包含封面、扉页、版权页、可点击目录、章节书签和页码，中文字体嵌入 PDF。页数及质量检查见 `ebook/QUALITY.md`。复现方法见 `ebook/README.md`。
 
