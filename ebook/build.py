@@ -11,6 +11,15 @@ if not font.exists(): raise SystemExit('Install NotoSerifCJKsc-Regular.otf in eb
 parts=[(1,'第一部','大脑是什么'),(6,'第二部','大脑开始组织世界'),(9,'第三部','世界怎样抵达我'),(12,'第四部','身体开始行动'),(15,'第五部','过去如何留在身体里'),(19,'第六部','我们怎样成为自己')]
 norm=lambda t:re.sub(r'[^\w\u4e00-\u9fff]','',t).casefold()
 chapters=[]; toc=[]; manifest=[]
+# High-resolution JPEG print copies avoid embedding large lossless RGB buffers.
+print_cache=ROOT/'ebook/print-cache'; print_cache.mkdir(exist_ok=True)
+def print_image(path):
+ if '/plates/' not in str(path): return path
+ target=print_cache/(path.stem+'-'+hashlib.sha256(path.read_bytes()).hexdigest()[:12]+'-1600-q90.jpg')
+ if not target.exists():
+  subprocess.run(['convert','-limit','thread','1',str(path),'-resize','1600x1000>','-sampling-factor','4:4:4','-quality','90',str(target)],check=True)
+ assert target.stat().st_size>1024, target
+ return target
 for i in range(1,25):
  qmd=ROOT/f'ch{i:02}.qmd'; page=ROOT/f'docs/ch{i:02}.html'
  s=BeautifulSoup(page.read_text(),'html.parser'); article=s.select_one('article.prose'); notes=s.select_one('section.footnotes')
@@ -37,9 +46,10 @@ for i in range(1,25):
   prev=f.find_previous_sibling()
   if prev and prev.name=='p': prev['class']=['before-figure']
   for img in f.select('img'):
-   img['src']=(ROOT/'docs'/img['src']).as_uri()
+   img['src']=print_image(ROOT/'docs'/img['src']).as_uri()
    for key in ['width','height','loading','decoding']: img.attrs.pop(key,None)
   for summary in f.select('summary'):summary.decompose()
+  for link in f.select('a.figure-image-link'):link.unwrap()
   for d in f.select('details'): d.unwrap()
   f['id']=f'ch{i:02}-'+f.get('id','figure')
  for x in notes.select('[style]'):del x['style']
@@ -65,14 +75,14 @@ h1,h2{line-height:1.5;font-weight:normal;break-after:avoid}h1{font-size:21pt;mar
 .toc ul{list-style:none;padding:0;margin:0;font-size:10pt;line-height:1.8}.toc li{margin:0 0 1mm}.toc a{display:block}.toc a:after{content:leader('.') target-counter(attr(href),page)}.toc-part-12{break-before:page}.toc-part{margin-top:3mm!important;font-size:11pt;color:#555;break-after:avoid}
 .part{break-before:page;break-after:page;text-align:center;padding-top:49mm}.part p{text-indent:0;text-align:center;font-size:13pt;color:#777;letter-spacing:3pt}.part h1{font-size:24pt;margin-top:9mm;bookmark-level:1}
 .chapter{break-before:page}.chapter>h1{font-size:20pt;padding-top:7mm;bookmark-level:2}.subtitle{font-size:10pt;color:#666;text-align:left;text-indent:0;margin-bottom:11mm;break-after:avoid}.chapter-rule,.overline{display:none}
-figure{margin:4mm 0 5mm;break-inside:avoid;line-height:1.45;text-align:center}figure img{max-width:100%;max-height:72mm;object-fit:contain;display:block;margin:auto}figcaption{font-size:8pt;color:#666;text-align:left;margin-top:2mm}figcaption span{display:block}.before-figure{break-after:avoid}
+figure{margin:4mm 0 5mm;break-inside:avoid;line-height:1.45;text-align:center}figure img{max-width:100%;max-height:80mm;object-fit:contain;display:block;margin:auto}figcaption{font-size:8.2pt;color:#46555d;text-align:left;margin-top:2mm}figcaption span{display:block}.before-figure{break-after:avoid}
 hr{border:none;border-top:0.5pt solid #ccc;margin:6mm 35mm;break-after:avoid}.citation{font-size:8pt;vertical-align:super}
 .footnotes{font-size:9pt;border-top:0.5pt solid #ccc;margin-top:8mm;padding-top:2mm}.footnotes p{text-indent:0;line-height:1.7}.refs{list-style:none;padding:0;font-size:8.5pt;line-height:1.65}.refs li{margin:0 0 2.5mm;break-inside:avoid;overflow-wrap:anywhere}
 '''.replace('FONT',font.as_uri())
 cover=(ROOT/'docs/assets/cover.webp').as_uri()
 front=f'''<section class="cover"><img src="{cover}" alt="本书封面"></section>
 <section class="front title-page"><h1>在我们理解大脑之前</h1><p>一个博士生穿越百年神经科学</p><p class="author">一心问道　著</p><p>六部 · 二十四章 · 完整图文电子书</p><p>2026年10月</p></section>
-<section class="front copyright"><h1>版权与阅读说明</h1><p>© 2026 一心问道。作品著作权归相应权利人所有。保留所有权利。</p><p>本版为作者授权公开下载的完整图文电子书，供个人阅读。公开下载不代表开放第三方转载、改编、再发行或商业使用授权。本书尚无正式出版 ISBN。</p><p>本书以真实神经科学史为背景。部分人物对话、相遇与生活情节属于文学创作，并非历史记录。各章保留史实与创作说明及参考文献。</p><p>本版封面采用深蓝与铜金色的神经元意象插画，于2026年10月13日更新；正文插图沿用作者确认公开展示的版本。部分为科学史资料重绘或示意图，不应视为原始历史照片。</p><p>电子书依据仓库2026年10月12日主分支的二十四章定稿制作；正文与 Quarto 源文件核对，插图沿用公开阅读页面的原始段落位置。本版校正明确的叙事矛盾、重复与用语问题，精简少量议论，保留情节、章节与参考文献。</p><p>作者：一心问道<br>版本：编辑修订图文版 · 2026-10-12（封面更新：2026-10-13）<br>在线阅读：<a href="https://zbyloveyj.github.io/brain-novel/">zbyloveyj.github.io/brain-novel/</a></p></section>
+<section class="front copyright"><h1>版权与阅读说明</h1><p>© 2026 一心问道。作品著作权归相应权利人所有。保留所有权利。</p><p>本版为作者授权公开下载的完整图文电子书，供个人阅读。公开下载不代表开放第三方转载、改编、再发行或商业使用授权。本书尚无正式出版 ISBN。</p><p>本书以真实神经科学史为背景。部分人物对话、相遇与生活情节属于文学创作，并非历史记录。各章保留史实与创作说明及参考文献。</p><p>本版封面采用深蓝与铜金色的神经元意象插画，于2026年10月13日更新；正文81幅插图于同日统一重绘与排版，保持原有段落位置、实验关系和资料说明。部分为科学史资料重绘或示意图，不应视为原始历史照片。</p><p>电子书依据仓库2026年10月12日主分支的二十四章定稿制作；正文与 Quarto 源文件核对，插图沿用公开阅读页面的原始段落位置。本版校正明确的叙事矛盾、重复与用语问题，精简少量议论，保留情节、章节与参考文献。</p><p>作者：一心问道<br>版本：编辑修订图文版 · 2026-10-12（封面与插图更新：2026-10-13）<br>在线阅读：<a href="https://zbyloveyj.github.io/brain-novel/">zbyloveyj.github.io/brain-novel/</a></p></section>
 <section class="front toc"><h1>目录</h1><ul>{''.join(toc)}</ul></section>'''
 doc='<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>在我们理解大脑之前</title><meta name="author" content="一心问道"><style>'+css+'</style></head><body>'+front+''.join(chapters)+'</body></html>'
 (ROOT/'ebook/book.html').write_text(doc)

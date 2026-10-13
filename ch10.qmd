@@ -138,16 +138,16 @@
 ## 本章插图
 
 
-![第10章科学史插图 023](assets/figures/figure-023.jpg){fig-align="center" width="90%"}
+![第10章科学史插图 023](assets/plates/figure-023.webp){fig-align="center" width="90%"}
 
 
-![第10章科学史插图 024](assets/figures/figure-024.jpg){fig-align="center" width="90%"}
+![第10章科学史插图 024](assets/plates/figure-024.webp){fig-align="center" width="90%"}
 
 
-![第10章科学史插图 025](assets/figures/figure-025.jpg){fig-align="center" width="90%"}
+![第10章科学史插图 025](assets/plates/figure-025.webp){fig-align="center" width="90%"}
 
 
-![第10章科学史插图 026](assets/figures/figure-026.jpg){fig-align="center" width="90%"}
+![第10章科学史插图 026](assets/plates/figure-026.webp){fig-align="center" width="90%"}
 
 
 ## 本章参考文献

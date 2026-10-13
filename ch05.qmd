@@ -374,10 +374,10 @@ NGF如果只有Rita的形态观察，会长期停留在“一种未知活性”�
 ## 本章插图
 
 
-![第5章科学史插图 011](assets/figures/figure-011.jpg){fig-align="center" width="90%"}
+![第5章科学史插图 011](assets/plates/figure-011.webp){fig-align="center" width="90%"}
 
 
-![第5章科学史插图 012](assets/figures/figure-012.jpg){fig-align="center" width="90%"}
+![第5章科学史插图 012](assets/plates/figure-012.webp){fig-align="center" width="90%"}
 
 
 ## 本章参考文献

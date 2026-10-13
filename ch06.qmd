@@ -86,10 +86,10 @@ Sperry早在做这只青蛙之前，就已经对“神经连接是否可以随�
 ## 本章插图
 
 
-![第6章科学史插图 013](assets/figures/figure-013.jpg){fig-align="center" width="90%"}
+![第6章科学史插图 013](assets/plates/figure-013.webp){fig-align="center" width="90%"}
 
 
-![第6章科学史插图 014](assets/figures/figure-014.jpg){fig-align="center" width="90%"}
+![第6章科学史插图 014](assets/plates/figure-014.webp){fig-align="center" width="90%"}
 
 
 ## 本章参考文献

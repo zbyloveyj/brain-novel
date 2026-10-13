@@ -81,3 +81,18 @@ main,.home-page main{max-width:none;min-width:0}.chapter-page main{max-width:850
 .home-page .primary-action{background:#ecd2a7;border-color:#f5debb;color:#173442}.home-page .primary-action:hover{background:#f7e4c4}.home-page .secondary-action{color:#f0e4d1;border-bottom-color:#baa48688}
 .home-page .hero-art:before{background:linear-gradient(160deg,#c3a37626,transparent);border-color:#cfb58466}.home-page .hero-art img{aspect-ratio:2/3;height:auto;border-color:#ba9a6b;box-shadow:3px 3px 0 #b9aa8d,6px 6px 0 #eee0c6,8px 8px 0 #a0927a,18px 26px 30px #061b2780;transform:rotate(2deg)}
 .home-page .hero-art-caption{color:#d9c09b}.home-page .hero-bottom{border-top-color:#d4bea22f;color:#b7c6cc}.home-page .hero-bottom a{color:#e8cda5}
+
+/* Illustrated edition: paper, midnight ink and copper. */
+.chapter-page .book-figure{padding:0;background:#fbf8f1;border:1px solid #dcd4c4;border-radius:4px;overflow:hidden;box-shadow:0 9px 25px #24374407;margin:38px auto;max-width:710px}
+.figure-image-link{display:block;position:relative;background:#fbf8f1;text-decoration:none;border:0!important;color:#254e62;cursor:zoom-in}
+.chapter-page .book-figure .figure-image-link img{display:block;width:100%;height:auto;max-height:none;border:0;border-radius:0;box-shadow:none;margin:0;object-fit:contain}
+.figure-image-link:after{content:'点击放大 ↗';position:absolute;bottom:10px;right:13px;background:#fffdf3ed;padding:4px 9px;border:1px solid #d5c1a5;border-radius:3px;font:10px/1.7 var(--sans);letter-spacing:.04em;color:#755334;opacity:.86}
+.figure-image-link:hover:after{background:#173d50;color:#fff4dd;border-color:#173d50;opacity:1}
+.figure-image-link:focus-visible{outline:3px solid #ad774b;outline-offset:-4px}
+.chapter-page .book-figure figcaption{margin:0;padding:17px 21px 19px;border-top:1px solid #e4dccd;background:#f7f2e8;font-size:12px;line-height:1.95;color:#4d606a}
+.chapter-page .caption-lead{display:block;color:#25495c;letter-spacing:.01em}
+.chapter-page .figure-more{margin-top:9px;padding-top:9px;border-top:1px solid #ded5c5}.chapter-page .figure-more summary{color:#8a603d;font-size:11px}.chapter-page .figure-more>span{display:block;margin-top:8px}
+.home-page .sample-image{background:#eee6d8}.home-page .sample-image img{background:#fbf8f1;border-color:#d6c9b5}
+[data-reader-theme="dark"] .chapter-page .book-figure{border-color:#657476}[data-reader-theme="dark"] .chapter-page .book-figure figcaption{background:#263942;color:#d3dcdb}[data-reader-theme="dark"] .chapter-page .caption-lead{color:#e3d9c5}[data-reader-theme="dark"] .chapter-page .figure-more summary{color:#d6b48e}
+@media(max-width:600px){.chapter-page .book-figure{margin:30px -3px}.chapter-page .book-figure figcaption{padding:14px 16px 16px;font-size:12px}.figure-image-link:after{font-size:9px;bottom:6px;right:8px;padding:3px 7px}}
+@media print{.figure-image-link:after{display:none}.chapter-page .book-figure{box-shadow:none;break-inside:avoid}}

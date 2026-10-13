@@ -1,0 +1,407 @@
+[
+  {
+    "chapter": 1,
+    "figure": 1,
+    "page": 13
+  },
+  {
+    "chapter": 1,
+    "figure": 2,
+    "page": 18
+  },
+  {
+    "chapter": 1,
+    "figure": 3,
+    "page": 20
+  },
+  {
+    "chapter": 2,
+    "figure": 1,
+    "page": 26
+  },
+  {
+    "chapter": 2,
+    "figure": 2,
+    "page": 31
+  },
+  {
+    "chapter": 3,
+    "figure": 1,
+    "page": 38
+  },
+  {
+    "chapter": 3,
+    "figure": 2,
+    "page": 41
+  },
+  {
+    "chapter": 4,
+    "figure": 1,
+    "page": 48
+  },
+  {
+    "chapter": 4,
+    "figure": 2,
+    "page": 52
+  },
+  {
+    "chapter": 5,
+    "figure": 1,
+    "page": 65
+  },
+  {
+    "chapter": 5,
+    "figure": 2,
+    "page": 69
+  },
+  {
+    "chapter": 6,
+    "figure": 1,
+    "page": 79
+  },
+  {
+    "chapter": 6,
+    "figure": 2,
+    "page": 81
+  },
+  {
+    "chapter": 7,
+    "figure": 1,
+    "page": 86
+  },
+  {
+    "chapter": 7,
+    "figure": 2,
+    "page": 91
+  },
+  {
+    "chapter": 8,
+    "figure": 1,
+    "page": 97
+  },
+  {
+    "chapter": 8,
+    "figure": 2,
+    "page": 100
+  },
+  {
+    "chapter": 9,
+    "figure": 1,
+    "page": 107
+  },
+  {
+    "chapter": 9,
+    "figure": 2,
+    "page": 109
+  },
+  {
+    "chapter": 9,
+    "figure": 3,
+    "page": 112
+  },
+  {
+    "chapter": 9,
+    "figure": 4,
+    "page": 114
+  },
+  {
+    "chapter": 10,
+    "figure": 1,
+    "page": 120
+  },
+  {
+    "chapter": 10,
+    "figure": 2,
+    "page": 124
+  },
+  {
+    "chapter": 10,
+    "figure": 3,
+    "page": 126
+  },
+  {
+    "chapter": 10,
+    "figure": 4,
+    "page": 127
+  },
+  {
+    "chapter": 11,
+    "figure": 1,
+    "page": 134
+  },
+  {
+    "chapter": 11,
+    "figure": 2,
+    "page": 135
+  },
+  {
+    "chapter": 11,
+    "figure": 3,
+    "page": 138
+  },
+  {
+    "chapter": 11,
+    "figure": 4,
+    "page": 141
+  },
+  {
+    "chapter": 12,
+    "figure": 1,
+    "page": 151
+  },
+  {
+    "chapter": 12,
+    "figure": 2,
+    "page": 153
+  },
+  {
+    "chapter": 12,
+    "figure": 3,
+    "page": 155
+  },
+  {
+    "chapter": 12,
+    "figure": 4,
+    "page": 157
+  },
+  {
+    "chapter": 13,
+    "figure": 1,
+    "page": 162
+  },
+  {
+    "chapter": 13,
+    "figure": 2,
+    "page": 164
+  },
+  {
+    "chapter": 13,
+    "figure": 3,
+    "page": 168
+  },
+  {
+    "chapter": 13,
+    "figure": 4,
+    "page": 169
+  },
+  {
+    "chapter": 14,
+    "figure": 1,
+    "page": 174
+  },
+  {
+    "chapter": 14,
+    "figure": 2,
+    "page": 177
+  },
+  {
+    "chapter": 14,
+    "figure": 3,
+    "page": 180
+  },
+  {
+    "chapter": 14,
+    "figure": 4,
+    "page": 182
+  },
+  {
+    "chapter": 15,
+    "figure": 1,
+    "page": 189
+  },
+  {
+    "chapter": 15,
+    "figure": 2,
+    "page": 192
+  },
+  {
+    "chapter": 15,
+    "figure": 3,
+    "page": 194
+  },
+  {
+    "chapter": 15,
+    "figure": 4,
+    "page": 197
+  },
+  {
+    "chapter": 16,
+    "figure": 1,
+    "page": 206
+  },
+  {
+    "chapter": 16,
+    "figure": 2,
+    "page": 207
+  },
+  {
+    "chapter": 16,
+    "figure": 3,
+    "page": 210
+  },
+  {
+    "chapter": 16,
+    "figure": 4,
+    "page": 213
+  },
+  {
+    "chapter": 17,
+    "figure": 1,
+    "page": 219
+  },
+  {
+    "chapter": 17,
+    "figure": 2,
+    "page": 222
+  },
+  {
+    "chapter": 17,
+    "figure": 3,
+    "page": 226
+  },
+  {
+    "chapter": 17,
+    "figure": 4,
+    "page": 228
+  },
+  {
+    "chapter": 18,
+    "figure": 1,
+    "page": 235
+  },
+  {
+    "chapter": 18,
+    "figure": 2,
+    "page": 238
+  },
+  {
+    "chapter": 18,
+    "figure": 3,
+    "page": 240
+  },
+  {
+    "chapter": 18,
+    "figure": 4,
+    "page": 242
+  },
+  {
+    "chapter": 19,
+    "figure": 1,
+    "page": 249
+  },
+  {
+    "chapter": 19,
+    "figure": 2,
+    "page": 251
+  },
+  {
+    "chapter": 19,
+    "figure": 3,
+    "page": 253
+  },
+  {
+    "chapter": 19,
+    "figure": 4,
+    "page": 256
+  },
+  {
+    "chapter": 20,
+    "figure": 1,
+    "page": 260
+  },
+  {
+    "chapter": 20,
+    "figure": 2,
+    "page": 263
+  },
+  {
+    "chapter": 20,
+    "figure": 3,
+    "page": 265
+  },
+  {
+    "chapter": 20,
+    "figure": 4,
+    "page": 267
+  },
+  {
+    "chapter": 21,
+    "figure": 1,
+    "page": 272
+  },
+  {
+    "chapter": 21,
+    "figure": 2,
+    "page": 274
+  },
+  {
+    "chapter": 21,
+    "figure": 3,
+    "page": 277
+  },
+  {
+    "chapter": 21,
+    "figure": 4,
+    "page": 279
+  },
+  {
+    "chapter": 22,
+    "figure": 1,
+    "page": 284
+  },
+  {
+    "chapter": 22,
+    "figure": 2,
+    "page": 286
+  },
+  {
+    "chapter": 22,
+    "figure": 3,
+    "page": 289
+  },
+  {
+    "chapter": 22,
+    "figure": 4,
+    "page": 291
+  },
+  {
+    "chapter": 23,
+    "figure": 1,
+    "page": 296
+  },
+  {
+    "chapter": 23,
+    "figure": 2,
+    "page": 298
+  },
+  {
+    "chapter": 23,
+    "figure": 3,
+    "page": 300
+  },
+  {
+    "chapter": 23,
+    "figure": 4,
+    "page": 302
+  },
+  {
+    "chapter": 24,
+    "figure": 1,
+    "page": 307
+  },
+  {
+    "chapter": 24,
+    "figure": 2,
+    "page": 309
+  },
+  {
+    "chapter": 24,
+    "figure": 3,
+    "page": 311
+  },
+  {
+    "chapter": 24,
+    "figure": 4,
+    "page": 313
+  }
+]

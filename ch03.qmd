@@ -190,10 +190,10 @@ Loewi在1921年发表经典蛙心实验：刺激第一颗蛙心的迷走神经�
 ## 本章插图
 
 
-![第3章科学史插图 007](assets/figures/figure-007.jpg){fig-align="center" width="90%"}
+![第3章科学史插图 007](assets/plates/figure-007.webp){fig-align="center" width="90%"}
 
 
-![第3章科学史插图 008](assets/figures/figure-008.jpg){fig-align="center" width="90%"}
+![第3章科学史插图 008](assets/plates/figure-008.webp){fig-align="center" width="90%"}
 
 
 ## 本章参考文献

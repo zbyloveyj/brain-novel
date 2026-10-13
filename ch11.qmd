@@ -150,16 +150,16 @@ Piezo证据层次。2010年论文把Piezo1与Piezo2识别为机械激活通道�
 ## 本章插图
 
 
-![第11章科学史插图 027](assets/figures/figure-027.jpg){fig-align="center" width="90%"}
+![第11章科学史插图 027](assets/plates/figure-027.webp){fig-align="center" width="90%"}
 
 
-![第11章科学史插图 028](assets/figures/figure-028.jpg){fig-align="center" width="90%"}
+![第11章科学史插图 028](assets/plates/figure-028.webp){fig-align="center" width="90%"}
 
 
-![第11章科学史插图 029](assets/figures/figure-029.jpg){fig-align="center" width="90%"}
+![第11章科学史插图 029](assets/plates/figure-029.webp){fig-align="center" width="90%"}
 
 
-![第11章科学史插图 030](assets/figures/figure-030.jpg){fig-align="center" width="90%"}
+![第11章科学史插图 030](assets/plates/figure-030.webp){fig-align="center" width="90%"}
 
 
 ## 本章参考文献

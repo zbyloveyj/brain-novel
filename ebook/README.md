@@ -4,7 +4,7 @@
 
 ## 复现
 
-需要 Python 3.11+、Pandoc 和 WeasyPrint 的系统依赖（Pango 等）。
+需要 Python 3.11+、ImageMagick（convert）、Pandoc 和 WeasyPrint 的系统依赖（Pango 等）。
 
 ```sh
 python -m pip install -r ebook/requirements.txt
@@ -25,3 +25,5 @@ Noto Serif CJK SC 使用 SIL Open Font License。字体仅作为构建依赖，P
 本次依据源提交 `e35e4f16a32ec9760ec70d1ddadd670ab708631c`，构建日期 2026-10-12。后续修改正文或网页后应重新构建、检查并更新版本日期。
 
 编辑修订版保留修改前后记录：`EDITORIAL.md`。
+
+2026-10-13 插图版：图内统一字体、版式与配色；构建时生成1600 × 1000、4:4:4 色度采样的 JPEG 打印缓存（书页中约 310 dpi），减少 PDF 的体积。缓存位于忽略目录 `ebook/print-cache/`，不影响网页使用的 WebP 与 SVG。

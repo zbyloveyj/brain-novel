@@ -280,10 +280,10 @@ Hodgkin仍然显得克制，像随时准备提醒别人“数据还没有完全�
 ## 本章插图
 
 
-![第4章科学史插图 009](assets/figures/figure-009.jpg){fig-align="center" width="90%"}
+![第4章科学史插图 009](assets/plates/figure-009.webp){fig-align="center" width="90%"}
 
 
-![第4章科学史插图 010](assets/figures/figure-010.jpg){fig-align="center" width="90%"}
+![第4章科学史插图 010](assets/plates/figure-010.webp){fig-align="center" width="90%"}
 
 
 ## 本章参考文献

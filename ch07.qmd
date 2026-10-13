@@ -110,10 +110,10 @@ Brodmann的地图让“大脑不是均匀组织”这件事更加具体。但结
 ## 本章插图
 
 
-![第7章科学史插图 015](assets/figures/figure-015.jpg){fig-align="center" width="90%"}
+![第7章科学史插图 015](assets/plates/figure-015.webp){fig-align="center" width="90%"}
 
 
-![第7章科学史插图 016](assets/figures/figure-016.jpg){fig-align="center" width="90%"}
+![第7章科学史插图 016](assets/plates/figure-016.webp){fig-align="center" width="90%"}
 
 
 ## 本章参考文献

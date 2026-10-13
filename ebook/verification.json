@@ -1,5 +1,5 @@
 {
-  "pages": 314,
+  "pages": 317,
   "chapters": 24,
   "images": 81,
   "references": 288,
@@ -8,6 +8,6 @@
   "bookmarks": 30,
   "missing_text_blocks": 0,
   "out_of_page_blocks": 0,
-  "sha256": "bfacecbc40ec0c8b85894ed44f89706133834dd0ef5170ccd3f15b35bc7ddb3e",
-  "bytes": 11784271
+  "sha256": "0132d69383e6a43de9fb9f70ceff7c6232ac9758af18a3311ffd8d602298ab1d",
+  "bytes": 11324418
 }
