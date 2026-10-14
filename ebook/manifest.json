@@ -2,42 +2,42 @@
   {
     "chapter": 1,
     "title": "第一章　黑色的森林",
-    "paragraphs": 54,
+    "paragraphs": 61,
     "images": 3,
     "references": 6,
-    "qmd_sha256": "7f236aa15a188432c36ce105ed31ff741a2f4f81e2c8d127a95aad0765fd517f"
+    "qmd_sha256": "a3000047af5815189f4b1f88c5ae0423c596041d4ee629abd5c1adf3f04423ce"
   },
   {
     "chapter": 2,
     "title": "第二章　神经系统不是电线",
-    "paragraphs": 45,
+    "paragraphs": 52,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "9e84d58eaf6495d32f50f9caaacf81043f9fd5f0e578a3b7c275388f5062f193"
+    "qmd_sha256": "93f3d9dc19aee3dd9d4a77c9fc0968f3650f1930a1a0b80d348b5b60f5938893"
   },
   {
     "chapter": 3,
     "title": "第三章　凌晨三点的两颗心",
-    "paragraphs": 85,
+    "paragraphs": 83,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "cea655acff48d0c502bc10cfa834707b3d83e05b7a5023b3556f3c6599d451d9"
+    "qmd_sha256": "76504a602e1a649b270f08decb91738cc0bbaba8006319bb2ee346f7cac1769c"
   },
   {
     "chapter": 4,
     "title": "第四章　一根比铅笔芯还粗的神经",
-    "paragraphs": 129,
+    "paragraphs": 127,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "fabf518b8274732c37889be5525f953db53c6792dacf7031ea47f784b0636247"
+    "qmd_sha256": "46bd166fa9664e8a2e99560c6cedf14359391496d01f0cdd3aa2b942397a3946"
   },
   {
     "chapter": 5,
     "title": "第五章　卧室里的实验室",
-    "paragraphs": 175,
+    "paragraphs": 170,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "5e6987652ef3685743b3c67f7b2fd19bfd4a8573df685af9b106b883b8851682"
+    "qmd_sha256": "797b93208f7c3537457b8c97905dff16bdaa9e2ae6caffd7b9481b57b78137a8"
   },
   {
     "chapter": 6,
@@ -45,7 +45,7 @@
     "paragraphs": 34,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "a777a23de2991b0b2b75e1a379a8a6024fc2025238be524ed063c5bb14a02881"
+    "qmd_sha256": "483d95fd9b3e1df07bfe7ae78f303ae23f9bf313b96039e48e00d36f84abcf44"
   },
   {
     "chapter": 7,
@@ -53,7 +53,7 @@
     "paragraphs": 43,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "d9abf0a9b3d585ebdbddd1469704069ddede18d53d432b8192d98f808ce0d525"
+    "qmd_sha256": "c7ab2c70cac07d30cdffb9e5420d45b9e137abc5f30312ed12939e26beb0f0d1"
   },
   {
     "chapter": 8,
@@ -61,7 +61,7 @@
     "paragraphs": 36,
     "images": 2,
     "references": 6,
-    "qmd_sha256": "c356e600b8bbede356f53962a176ea570c919f8b9fff09833c5b9b8a9908bc54"
+    "qmd_sha256": "092c5f6593ef4bd0a5f9211d45af8b9eb75bb8e28cba2f5d492b06b45d70fbcc"
   },
   {
     "chapter": 9,
@@ -69,7 +69,7 @@
     "paragraphs": 55,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "9aaaaaf42d4929644919a2163cf22925ae7bfe6a73025c667ab8b80ff8cd96cc"
+    "qmd_sha256": "00ba42c059eaafcd1fbe2b719f59c6fa49f515e90b7a902f2c595dee7853c15d"
   },
   {
     "chapter": 10,
@@ -77,7 +77,7 @@
     "paragraphs": 53,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "2d6734d05fd6fbec24bb0e38702b38dff86f9ec424200a856be63f735ca5acb5"
+    "qmd_sha256": "e0c076fe8846da28d9d45b4aae7818a47787f66c1516e4db4eaaad56a63a70a9"
   },
   {
     "chapter": 11,
@@ -85,7 +85,7 @@
     "paragraphs": 59,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "1b74531e8daefe1a1faaf0883ccc8116bbe0d71de36a9f6c2a0a63be3072cd50"
+    "qmd_sha256": "11756e022494be3e3399b94f0021d0ffc7c3f61432bcb2cdf1ac124a388f860e"
   },
   {
     "chapter": 12,
@@ -93,7 +93,7 @@
     "paragraphs": 38,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "df05356e8d1bfd458a59a4e8ac55e3c4493b29158a6f5cb65005f92ea9c14a25"
+    "qmd_sha256": "2d293b9497bb9ae0ff6af8daa0a224722fa6f0826c458cad82831a2fb1e01039"
   },
   {
     "chapter": 13,
@@ -101,7 +101,7 @@
     "paragraphs": 42,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "c65646f0c6a761e8b4142148ca96fc57796a42468cfb4a984c2e86a021306b7c"
+    "qmd_sha256": "d51ed31158b5330705b7c1542f4a44c7f3874f2debb71d1d6429729ae4677036"
   },
   {
     "chapter": 14,
@@ -109,7 +109,7 @@
     "paragraphs": 42,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "9921bcbd03b2e32e564347ad8b29c02ff42565d86e2bc42805aefc0827302b14"
+    "qmd_sha256": "c02bd8e695667a622d069a7d36c2e8cae651103a29f74bee6256a7067c639c4f"
   },
   {
     "chapter": 15,
@@ -117,7 +117,7 @@
     "paragraphs": 49,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "7c51a8355a3446cd8c9cc2e43996b81dfb8a02dbe3fc24ceb968daf3137771e4"
+    "qmd_sha256": "1f3155724412c559646fe1dd036a6b2cfd45da896fc7fa65010b9b39da5c6401"
   },
   {
     "chapter": 16,
@@ -125,7 +125,7 @@
     "paragraphs": 51,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "e3393327904f6c5182bac239523b9f3ac454312dde2b6e820acbfe7cca3e0c73"
+    "qmd_sha256": "97e352a6d0e006dee23e41decbf443b6a6cd7ac92905ac9d6de185218ccaa9bf"
   },
   {
     "chapter": 17,
@@ -133,7 +133,7 @@
     "paragraphs": 60,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "77afb4d6d6c2afd52031635fe21732393bde977dd56cc0ac182ca9d6273eba79"
+    "qmd_sha256": "741f9f7fac97fe48a09c16aca6196c7eaebfa1671609fbb46a2a33a002ed14d0"
   },
   {
     "chapter": 18,
@@ -141,7 +141,7 @@
     "paragraphs": 42,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "4ff167f5c8ba599cacd24f9798e49d6de3d41b6dac7723a4822c7fb6ce5e9a96"
+    "qmd_sha256": "97d1ccde6a5813e3fa3ced0b99aaeab6a36eef9e771654206904931ade209040"
   },
   {
     "chapter": 19,
@@ -149,7 +149,7 @@
     "paragraphs": 42,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "205e58550616e3197dc5accb11b372b4b8e49bcbbbe714818b80fb35591f5e55"
+    "qmd_sha256": "ed14d3fae81fcb07d1723d42d69fe846fd72de4a472cf838f9045ae2e45fe2d2"
   },
   {
     "chapter": 20,
@@ -157,7 +157,7 @@
     "paragraphs": 38,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "e94926d887596ef0e753403b000be6b9b13e6f7efeeb8d72a2c3aa358462d987"
+    "qmd_sha256": "539be7716569fa0fbe722698a7b75d5fabdbf3e726ba6b9450ea725c1ee2e860"
   },
   {
     "chapter": 21,
@@ -165,7 +165,7 @@
     "paragraphs": 38,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "986a2316a66160fc1fe018be666be58216f000361572084f9703c0dd3175960e"
+    "qmd_sha256": "1751145bb65b2a74be358ecead37795778f5044fb8c9f972c676686bd6313eea"
   },
   {
     "chapter": 22,
@@ -173,7 +173,7 @@
     "paragraphs": 35,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "5f3084406905ba68390b86861882f32021f20471fcf7801d89df9fd092cbc69c"
+    "qmd_sha256": "5e6198ef1604b6b1a5370bf5674f332e77453adc2a1133b8105b13081918804f"
   },
   {
     "chapter": 23,
@@ -181,14 +181,14 @@
     "paragraphs": 39,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "e6307b046d2582aceffec657d8f9f3ae93d76cbccd904cad1c4e8cae17bb97a4"
+    "qmd_sha256": "0324b7864c6b61cf38a66403d86481d66fdd50f8b011c836f429db8de22dd5fd"
   },
   {
     "chapter": 24,
     "title": "第二十四章　回到那张脑图",
-    "paragraphs": 47,
+    "paragraphs": 48,
     "images": 4,
     "references": 15,
-    "qmd_sha256": "98fb5dedf5b85bbd366c00f9db69f6774564eadd30eecad851434b9bdb49f06f"
+    "qmd_sha256": "8e8355eec7840a6ff2f0abbe3bd4c4e2e0d33aadd4dbf6256d9575bca2ba8302"
   }
 ]

@@ -176,7 +176,7 @@ main {width:100%;min-width:0;max-width:780px}
 @media print{.topbar,.sidenav,.reader-toolbar,.reader-overlay,.annotation-float,.reader-progress,.reader-notes-panel,.reader-toc-panel{display:none!important}.layout{display:block;padding:0}.prose{font-size:11pt;line-height:1.8}.book-figure{break-inside:avoid}.footer{color:#888}.book-hero{border:0}}
 
 /* Edition 4: a quiet book jacket, a clear directory and comfortable reading. */
-@font-face{font-family:"Novel Song";src:url("assets/fonts/novel-song.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Novel Song";src:url("assets/fonts/novel-song.woff2?v=20261014edit") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 :root{--paper:#faf8f2;--surface:#fffdf8;--ink:#25372f;--secondary:#526257;--muted:#68796c;--line:#dfdfd4;--serif:"Novel Song","Source Han Serif SC","Noto Serif CJK SC","Songti SC","STSong","SimSun",serif}
 .topbar{background:rgba(250,248,242,.96)}
 .home-page .layout{display:block;max-width:1200px;padding:55px 40px 70px}

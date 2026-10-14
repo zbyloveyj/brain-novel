@@ -27,3 +27,5 @@ Noto Serif CJK SC 使用 SIL Open Font License。字体仅作为构建依赖，P
 编辑修订版保留修改前后记录：`EDITORIAL.md`。
 
 2026-10-13 插图版：图内统一字体、版式与配色；构建时生成1600 × 1000、4:4:4 色度采样的 JPEG 打印缓存（书页中约 310 dpi），减少 PDF 的体积。缓存位于忽略目录 `ebook/print-cache/`，不影响网页使用的 WebP 与 SVG。
+
+2026-10-14 编辑修订版：基于 `483bc33dddc0f4c2b728f4809a384a7a2e0f8056`，同步修改 QMD 与静态 HTML 后重建。逐项记录见 `editorial-20261014.json`，当前结果见 `verification.json`。

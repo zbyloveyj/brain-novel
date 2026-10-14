@@ -13,11 +13,13 @@
  const paras=Array.from(article.querySelectorAll(':scope > p[data-para-index]'));
  function normalColor(c){return ['yellow','green','blue'].includes(c)?c:'yellow'}
  function stripMarks(){article.querySelectorAll('mark.reader-mark').forEach(mark=>mark.replaceWith(...mark.childNodes));paras.forEach(p=>p.normalize())}
- function anchor(note){const p=paras[note.p];if(!p)return null;
-  const content=p.textContent,quote=note.quote;
-  if(content.slice(note.start,note.end)===quote)return {p,start:note.start,end:note.end};
-  const near=content.indexOf(quote,Math.max(0,note.start-60));const start=near<0?content.indexOf(quote):near;
-  if(start<0)return null;return {p,start,end:start+quote.length};
+ function anchor(note){const quote=note.quote;if(typeof quote!=='string'||!quote)return null;
+  const original=paras[note.p];
+  if(original&&original.textContent.slice(note.start,note.end)===quote)return {p:original,start:note.start,end:note.end};
+  // Paragraphs can move between editions. Restore only an unambiguous exact quotation.
+  const hits=[];
+  for(const p of paras){let start=p.textContent.indexOf(quote);while(start!==-1){hits.push({p,start,end:start+quote.length});if(hits.length>1)return null;start=p.textContent.indexOf(quote,start+1)}}
+  return hits.length===1?hits[0]:null;
  }
  function applyMark(note){const hit=anchor(note);if(!hit)return;
   const {p,start,end}=hit;const w=document.createTreeWalker(p,NodeFilter.SHOW_TEXT);let node;let cursor=0;const parts=[];
@@ -29,7 +31,11 @@
    text.parentNode.replaceChild(mark,text);mark.append(text);
   }
  }
- function rebuild(){stripMarks();for(const n of notes()){if(n&&Number.isInteger(n.p)&&typeof n.quote==='string'&&n.quote.length)applyMark(n)}}
+ function rebuild(){stripMarks();let moved=false;for(const n of notes()){
+  if(!n||!Number.isInteger(n.p)||typeof n.quote!=='string'||!n.quote.length)continue;
+  const hit=anchor(n);if(!hit)continue;const index=paras.indexOf(hit.p);
+  if(n.p!==index||n.start!==hit.start||n.end!==hit.end){n.p=index;n.start=hit.start;n.end=hit.end;moved=true}applyMark(n);
+ }if(moved)save()}
  const tools=el('div','annotation-float');tools.setAttribute('role','toolbar');tools.setAttribute('aria-label','选中文字后的操作');
  for(const [mode,label] of [['yellow','黄线'],['green','绿线'],['blue','蓝线'],['note','记笔记']]){const b=el('button','',label);b.type='button';b.dataset.action=mode;tools.append(b)}
  document.body.append(tools);
@@ -90,7 +96,7 @@
    const quote=el('blockquote','',n.quote);quote.dataset.color=normalColor(n.color);item.append(quote);
    if(n.body)item.append(el('p','',n.body));
    const buttons=el('div','reader-notes-actions');
-   const locate=el('button','','回到原文');locate.onclick=()=>{
+   const available=which!==ch||!!anchor(n);const locate=el('button','',available?'回到原文':'原句已修订，笔记仍保留');locate.disabled=!available;locate.onclick=()=>{
     if(which!==ch){location.href=`ch${String(which).padStart(2,'0')}.html#${encodeURIComponent(n.id)}`;return}
     window.BrainNovelReader?.closeAll();const mark=article.querySelector(`mark[data-note-id="${CSS.escape(n.id)}"]`);(mark||paras[n.p])?.scrollIntoView({behavior:'smooth',block:'center'});
    };
