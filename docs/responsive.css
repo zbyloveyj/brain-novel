@@ -1,0 +1,116 @@
+/* Shared screen layout. The reading sheet fills its grid column; text stays centered. */
+@media screen {
+  .layout,.home-page .layout{width:100%;max-width:1800px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px;margin:0 auto;padding:30px 32px 70px}
+  .topbar-inner{width:100%;max-width:1800px;padding:0 32px}
+  .layout>main,.home-page .layout>main,.chapter-page .layout>main{width:100%;min-width:0;max-width:none;margin:0}
+  .chapter-page .layout>main{padding:32px 40px 48px}
+  .chapter-page main>*,.chapter-page .prose{width:100%;max-width:1000px;margin-left:auto;margin-right:auto;min-width:0}
+  .chapter-page .book-figure{width:100%;max-width:900px;margin:38px auto}
+  .chapter-page .book-figure figcaption{max-width:none}
+  .about-prose{max-width:none}
+  .layout img{max-width:100%;height:auto}
+  .layout :is(section,article,nav,div){min-width:0}
+  .prose,.footnotes,.about-prose{overflow-wrap:anywhere}
+  .reader-toolbar{flex-wrap:wrap;justify-content:flex-start;row-gap:8px}
+  .reader-toolbar-label{margin-right:auto}
+  .reader-settings{width:260px;min-width:0;max-width:calc(100vw - 32px)}
+  .home-page .hero-copy h1{font-size:clamp(36px,3.4vw,60px)}
+  .home-page .hero-description{max-width:42em}
+  .home-page .hero-actions{flex-wrap:wrap;row-gap:12px}
+  .home-page .book-hero{grid-template-columns:minmax(0,1fr) minmax(190px,28%);gap:28px 36px}
+  .routes-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+  .route-card>p:not(.route-label){min-height:0}
+  .route-card ol{display:block}
+  .chapter-link-copy,.chapter-link-title{min-width:0;overflow-wrap:anywhere}
+  .home-section-nav{flex-wrap:wrap}
+}
+@media screen and (min-width:1600px){
+  .layout,.home-page .layout{grid-template-columns:270px minmax(0,1fr);gap:40px;padding-left:40px;padding-right:40px}
+  .topbar-inner{padding-left:40px;padding-right:40px}
+  .chapter-page .layout>main{padding-left:54px;padding-right:54px}
+}
+/* Tablets, small laptops and zoomed desktop windows share the same drawer breakpoint. */
+@media screen and (max-width:1199px){
+  .layout,.home-page .layout{display:block;width:100%;max-width:none;padding:24px 28px 56px}
+  .topbar-inner{padding:0 28px;gap:16px}
+  .navigation-toggle{display:flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 12px;min-height:44px;border-radius:4px;font:12px/1.5 var(--sans);white-space:nowrap;flex-shrink:0}
+  .toplinks{margin-left:auto}.toplinks a:not(.keep){display:none}
+  .brand{font-size:16px;min-width:0}.brand-seal{flex-shrink:0}
+  .home-page .sidenav,.sidenav{position:fixed;display:block;top:74px;bottom:0;left:0;width:min(320px,88vw);height:calc(100dvh - 74px);max-height:none;z-index:1102;border-radius:0;padding:24px 20px 30px;transform:translateX(-105%);visibility:hidden;transition:transform .2s,visibility .2s;box-shadow:15px 0 35px #172b2329}
+  .navigation-open .sidenav{transform:translateX(0);visibility:visible}
+  .navigation-backdrop{position:fixed;inset:74px 0 0;background:#182c2477;z-index:1101;border:0;backdrop-filter:blur(2px)}
+  .navigation-toggle[aria-expanded="true"]{background:#355440;color:#fff8e8}
+  .chapter-search input{font-size:16px;height:44px}.sidenav a[data-chapter]{padding:11px 9px;min-height:44px}.nav-chapter-title{font-size:13px}
+  .chapter-page .layout>main{padding:28px 36px 40px}
+  .home-page .book-hero{grid-template-columns:minmax(0,1fr) minmax(200px,28%);padding:38px 34px 24px}
+  .home-page .hero-copy h1{font-size:clamp(38px,4.6vw,52px)}
+  .home-page .hero-art{width:auto;max-width:280px;margin-left:auto;margin-right:auto}
+  .home-page .hero-art img{width:100%;max-width:260px}
+  .part-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.part-card ol{display:block}
+  .home-page .book-intro{grid-template-columns:1fr 1.1fr}
+}
+@media screen and (min-width:621px) and (max-width:899px){
+  .layout,.home-page .layout{padding-left:22px;padding-right:22px}
+  .home-page .book-hero{padding:32px 26px 22px;gap:26px;grid-template-columns:minmax(0,1fr) 190px}
+  .home-page .hero-copy h1{font-size:38px}.home-page .hero-art img{max-width:190px}
+  .part-grid{grid-template-columns:1fr}.part-card ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+  .home-page .book-intro{grid-template-columns:1fr}.intro-heading h2 br{display:none}
+  .author-profile{grid-template-columns:160px minmax(0,1fr);padding:25px;gap:24px}
+  .author-publication{flex-wrap:wrap}.author-publication>p{text-align:left}
+  .routes-grid{grid-template-columns:1fr}.route-card ol{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+}
+@media screen and (max-width:620px){
+  .topbar{height:62px}.topbar-inner{padding:0 12px;gap:10px}
+  .brand{font-size:13px;gap:7px;max-width:none;line-height:1.5;letter-spacing:0}
+  .brand-seal{width:23px;height:27px;font-size:14px}
+  .toplinks{display:none}.navigation-toggle{font-size:11px;padding:8px;gap:5px;min-height:44px}
+  .home-page .sidenav,.sidenav{top:62px;height:calc(100dvh - 62px);width:min(320px,88vw)}
+  .navigation-backdrop{top:62px}
+  .layout,.home-page .layout{padding:16px 12px 36px}
+  .chapter-page .layout{padding:12px 8px 32px}
+  .chapter-page .layout>main{padding:22px 18px 32px;border-radius:4px}
+  .chapter-page .chapter-name{font-size:clamp(26px,6.5vw,34px);line-height:1.55;overflow-wrap:anywhere}
+  .chapter-page .subtitle{font-size:12px}
+  .chapter-page .book-figure{margin:28px auto}
+  .chapter-page .book-figure figcaption{padding:14px;font-size:12px}
+  .reader-toolbar{padding:8px;gap:4px;margin-bottom:28px}
+  .reader-toolbar button{min-height:44px;padding:7px 9px}
+  .reader-toolbar-label{flex-basis:100%;margin-bottom:3px}
+  .reader-settings{position:fixed;top:76px;left:16px;right:16px;width:auto;max-width:none;max-height:calc(100dvh - 100px);overflow:auto;z-index:1103}
+  .footnotes{padding:20px 16px}.refs{padding-left:0}
+  .endnav{gap:12px}.endnav a{padding:12px;overflow-wrap:anywhere}
+  .home-page .book-hero{grid-template-columns:minmax(0,1fr);padding:28px 22px 20px;gap:14px}
+  .home-page .hero-copy h1{font-size:clamp(34px,9vw,46px)}
+  .home-page .hero-art{width:190px;margin:16px auto 8px;padding:16px 10px}
+  .home-page .hero-art img{width:100%;max-width:170px}
+  .hero-bottom{flex-wrap:wrap;gap:12px}.hero-bottom>span{max-width:none}
+  .home-page .book-intro{grid-template-columns:1fr}
+  .part-grid,.story-lines-grid,.guide-grid,.routes-grid{grid-template-columns:minmax(0,1fr)}
+  .part-card ol,.route-card ol{display:block}
+  .part-card,.story-line,.route-card{padding-left:20px;padding-right:20px}
+  .sample-card{display:block}.sample-copy{padding:22px 20px}
+  .author-profile{grid-template-columns:minmax(0,1fr);padding:24px 20px}
+  .author-publication{flex-wrap:wrap}.author-publication>p{text-align:left}
+  .edition-note{display:block;padding:24px 20px}.edition-note>p{margin:16px 0}
+  .about-prose{padding:20px}
+}
+@media screen and (max-width:359px){
+  .brand-seal{display:none}.brand{font-size:12px}.topbar-inner{gap:6px}
+  .chapter-page .layout>main{padding-left:14px;padding-right:14px}
+  .home-page .hero-actions{gap:12px}.home-page .hero-actions a{white-space:normal}
+}
+@media screen {
+  .home-page .hero-copy{width:100%}
+  .home-page .hero-copy>p,.home-page .hero-copy>h1{width:100%}
+  .chapter-page .chapter-rule{margin:28px auto}
+}
+@media screen {
+  .home-page .book-hero{grid-template-areas:"copy art" "bottom bottom" "stamp stamp"}
+  .home-page .hero-copy{grid-area:copy}
+  .home-page .hero-art{grid-area:art}
+  .home-page .hero-bottom{grid-area:bottom}
+  .home-page .edition-stamp{grid-area:stamp}
+}
+@media screen and (max-width:620px){
+  .home-page .book-hero{grid-template-areas:"copy" "art" "bottom" "stamp"}
+}

@@ -7,7 +7,7 @@
  const search=nav.querySelector('input[type="search"]');
  const status=nav.querySelector('.nav-search-status');
  const chapters=[...nav.querySelectorAll('a[data-chapter]')];
- const narrow=matchMedia('(max-width: 959px)');
+ const narrow=matchMedia('(max-width: 1199px)');
  let returnFocus=null,previousOverflow='';
  function setOpen(open){
   if(open){returnFocus=document.activeElement;previousOverflow=document.body.style.overflow;document.body.classList.add('navigation-open');document.body.style.overflow='hidden';toggle.setAttribute('aria-expanded','true');backdrop.hidden=false;search.focus({preventScroll:true});requestAnimationFrame(()=>requestAnimationFrame(()=>{if(toggle.getAttribute('aria-expanded')==='true')search.focus({preventScroll:true})}))}
